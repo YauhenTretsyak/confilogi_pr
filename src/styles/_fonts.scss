@@ -62,6 +62,13 @@
   font-family: 'Abuget';
   src:  url('../fonts/Abuget.woff') format('woff'),
        url('../fonts/Abuget.woff2') format('woff2');
+}
+
+// Montserrat-Bold
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+    url('../fonts/Montserrat-Bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
