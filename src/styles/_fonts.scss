@@ -57,4 +57,13 @@
   font-style: normal;
 }
 
+// Abudget
+@font-face {
+  font-family: 'Abuget';
+  src:  url('../fonts/Abuget.woff') format('woff'),
+       url('../fonts/Abuget.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $font: 'Roboto-Regular';
