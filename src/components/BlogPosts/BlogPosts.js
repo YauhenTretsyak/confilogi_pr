@@ -2,7 +2,7 @@ import React from 'react';
 
 const BlogPosts = () => {
   return (
-    <section>
+    <section className='blog_posts'>
       
     </section>
   )

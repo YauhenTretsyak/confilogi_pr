@@ -1,5 +1,3 @@
-import Footer from "../Footer"
-
 import React from 'react';
 
 const LinkItem = ({content}) => {

@@ -8,13 +8,9 @@ function App() {
   return (
     <>
       <Header />
-      <div className="blog_wrapper" >
-        <Blog>
-
-        </Blog>
-        <BlogPosts>
-
-        </BlogPosts>
+      <div className="box_wrapper blog_wrapper" >
+        <Blog />
+        <BlogPosts />
       </div>
       <Footer/>
     </>
