@@ -1,7 +1,16 @@
 import React from 'react';
 import Data from '../../data/Data.js';
+import LinkItem from './LinkItem/LinkItem.js';
 
 const Footer = () => {
+
+  const linkData = Data.footerLinks;
+
+  const footerLinks = linkData.map((item, index) => {
+    return (
+      <LinkItem key={index + 'bvccvdm8795g'} content={item}/>
+    )
+  })
   
   return (
     <section className="footer">
@@ -9,9 +18,7 @@ const Footer = () => {
         <div className="footer_content-wrapper">
           <p className="footer_copyright">Copyright © 2020</p>
           <div className="footer_links-wrapper">
-            <a className="footer_link" href="/">Polityka prywatności</a>
-            <a className="footer_link" href="/">Mapa strony</a>
-            <a className="footer_link" href="/">Cookies</a>
+            { footerLinks }
           </div>
         </div>
       </div>

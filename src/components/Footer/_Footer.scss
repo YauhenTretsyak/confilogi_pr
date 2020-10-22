@@ -1,31 +1,57 @@
 .footer {
-  padding: 18px 0;
+  padding: 1.8rem 0;
   font-family: 'SegoeUI-Regular';
-  font-size: $font_size-18;
+  font-size: $font_size-12;
   color: $color_white;
   background-color: $color_black;
 
+  @media only screen and (min-width: 576px) {
+    font-size: $font_size-18;
+  }
+
   &_content-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+
+    @media only screen and (min-width: 576px) {
+      justify-content: space-between;
+    }
   }
 
   &_copyright {
+    margin-bottom: .5rem;
+    width: 100%;
     opacity: .5;
+    text-align: center;
+
+    @media only screen and (min-width: 576px) {
+      margin-bottom: 0;
+      width: auto;
+      text-align: left;
+    }
   }
 
   &_link {
-    padding: 0 10px;
-    border-right: 2px solid $color_white;
-    font-size: $font_size-18;
+    padding: 0 1rem;
+    border-right: .2rem solid $color_white;
+    font-size: $font_size-12;
     text-decoration: none;
     color: $color_white;
     opacity: .25;
 
+    @media only screen and (min-width: 576px) {
+      font-size: $font_size-18;
+    }
+
     &:last-child {
       border-right: none;
       padding-right: 0;
+    }
+
+    &:first-child {
+      padding-left: 0;
     }
   }
 }

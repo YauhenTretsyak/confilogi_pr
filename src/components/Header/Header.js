@@ -9,20 +9,20 @@ function Header() {
     <>
       <header className='header'>
         <div className='box_wrapper'>
-          <div classname='header__social-media-wrapper'>
-            <div classname='header__social-media'>
+          <div className='header__social-media-wrapper'>
+            <div className='header__social-media'>
               <img
-                classname='header__social-media__item'
+                className='header__social-media__item'
                 src={fb}
                 alt='fb-logo'
               />
               <img
-                classname='header__social-media__item'
+                className='header__social-media__item'
                 src={twitter}
                 alt='twitter-logo'
               />
               <img
-                classname='header__social-media__item'
+                className='header__social-media__item'
                 src={instagram}
                 alt='instagram-logo'
               />
