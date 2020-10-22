@@ -59,12 +59,12 @@
 
     &_navigation_item {
       text-decoration: none;
-      color: $color_black;
+      color: $color_black_additional;
       font-size: $font_size-20;
       font-weight: $font_weight-bold;
       text-transform: uppercase;
-      margin-right: 5rem;
-      margin-left: 5rem;
+      margin-right: 4.5rem;
+      margin-left: 4.5rem;
     }
   }
 }
