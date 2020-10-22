@@ -1,13 +1,9 @@
-.date {
+.author {
     display: flex;
     margin-bottom: 1rem;
 }
 
-.date_text {
+.author_text {
     color: $color_grey-light;
     margin-left: 1rem;
-}
-
-.date_text::first-letter {
-    text-transform: uppercase;
 }
