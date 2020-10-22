@@ -37,6 +37,13 @@
   margin-bottom: 2rem;
 }
 
+.blog_info {
+  @media only screen and (min-width: 400px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .blog_title {
   font-family: 'AmsiProNarw-BlackItalic';
   font-size: $font_size-30;
@@ -54,4 +61,14 @@
 
 .blog_img {
   width: 100%;
+  margin-bottom: 2rem;
+}
+
+.pink-text-bold {
+  color: $color_pink-main;
+  font-weight: $font_weight-bold;
+}
+
+.text-bold {
+  font-weight: $font_weight-bold;
 }

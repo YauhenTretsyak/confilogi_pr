@@ -4,6 +4,7 @@ import Navigation from '../blocks/Navigation/Navigation.js';
 import mainPhoto from '../../assets/photo/main-photo.png';
 import Date from '../blocks/Date/Date.js';
 import Author from '../blocks/Author/Author.js';
+import Paragraph from '../blocks/Paragraph/Paragraph.js';
 
 const Blog = () => {
   return (
@@ -24,7 +25,35 @@ const Blog = () => {
         powiększysz i ujędrnisz biust oraz pośladki tak jak ona!
       </h1>
       <img className='blog_img' src={mainPhoto} alt='kylie-jenner'></img>
-      {/* <Paragraph /> */}
+      <Paragraph>
+        Słyszeliście już najnowsze ploteczki? Jedna z najbardziej znanych
+        dwudziestolatek, gwiazda urodzona w najseksowniejszej rodzinie na
+        świecie – Jenner-Kardashian – wyznała ostatnio coś zaskakującego.
+        Okazuje się, że jej obfity, kształtny biust i pośladki nie są wynikiem
+        genetyki, ani – co dziwniejsze – chirurgii plastycznej. Za te piękne,
+        kobiece kształty odpowiada{' '}
+        <span className='pink-text-bold'>nieinwazyjna naturalna metoda!</span>
+        Gdyby celebrytka nie przyznała tego sama, ciężko byłoby uwierzyć,{' '}
+        <span className='pink-text-bold'>
+          że swoje nieziemskie krągłości zawdzięcza wyłącznie temu innowacyjnemu
+          żelowi.
+        </span>
+      </Paragraph>
+      <Paragraph>
+        Ta wiadomość wstrząsnęła fanami. Niech każda z nas zada sobie pytanie –
+        <span className='text-bold'>
+          czy gdyby istniała możliwość poprawienia swoich walorów, bez wydawania
+          dużej ilości pieniędzy, nie chciałybyśmy z niej skorzystać?
+        </span>{' '}
+        W końcu spełnić marzenie o idealnych krągłościach bez konieczności
+        wydawania ogromnych ilości pieniędzy czy kładzenia się pod nóż
+        operacyjny? Czy gdyby metody znane Kylie były dostępne na wyciągnięcie
+        ręki – za pieniądze nieporównywalnie niskie w stosunku do operacji
+        plastycznej – nie chciałybyśmy spróbować?
+      </Paragraph>
+      <Paragraph>
+        Nasza redakcja na pewno powiedziałaby: <span className='text-bold'>TAK!</span> A Wy jak, Kochane? ;)
+      </Paragraph>
     </section>
   );
 };

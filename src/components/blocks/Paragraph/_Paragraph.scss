@@ -1,0 +1,8 @@
+.paragraph_text {
+    line-height: 1.5;
+    margin-bottom: 2rem;
+
+    @media only screen and (min-width: 1104px) {
+        font-size: $font_size-18;
+      }
+}
