@@ -35,6 +35,7 @@ const BlogPosts = () => {
         btnTitle={'Zapisz'}
         content={ testContentSearch }
       />
+      <div className='blog_posts__search-bottom_border'></div>
 
     </section>
   )

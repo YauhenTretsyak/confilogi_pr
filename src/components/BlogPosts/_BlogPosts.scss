@@ -1,10 +1,16 @@
 .blog_posts {
   display: none;
-  padding-top: 11px;
   
   @media only screen and (min-width: 768px){
     display: block;
     width: 390px;
     margin-left: 10px;
+    padding-top: 11px;
+  }
+
+  &__search-bottom_border {
+    padding-bottom: 32px;
+    border-bottom: 1px solid $color_grey-light;
+    opacity: .2;
   }
 }
