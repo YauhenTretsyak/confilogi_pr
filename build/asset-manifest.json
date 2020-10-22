@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.89137113.chunk.css",
+    "main.js": "/static/js/main.15a0148d.chunk.js",
+    "main.js.map": "/static/js/main.15a0148d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8ebae7e1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8ebae7e1.js.map",
+    "static/js/2.a212e2ca.chunk.js": "/static/js/2.a212e2ca.chunk.js",
+    "static/js/2.a212e2ca.chunk.js.map": "/static/js/2.a212e2ca.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.14fef16c5ed918ad19821b5b1d2fe72f.js": "/precache-manifest.14fef16c5ed918ad19821b5b1d2fe72f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.89137113.chunk.css.map": "/static/css/main.89137113.chunk.css.map",
+    "static/js/2.a212e2ca.chunk.js.LICENSE.txt": "/static/js/2.a212e2ca.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/roboto-regular-webfont.99935f2c.woff",
+    "static/media/aside-dzieki-tym.png": "/static/media/aside-dzieki-tym.32a178fd.png",
+    "static/media/aside-poznaj-historie.png": "/static/media/aside-poznaj-historie.4a5b609c.png",
+    "static/media/aside-szokujace-wyznanie.png": "/static/media/aside-szokujace-wyznanie.423b1bc0.png",
+    "static/media/icon-author.svg": "/static/media/icon-author.0fb6fa34.svg",
+    "static/media/icon-clock.svg": "/static/media/icon-clock.61a97845.svg",
+    "static/media/icon-facebook.svg": "/static/media/icon-facebook.ce4ba319.svg",
+    "static/media/icon-instagram.svg": "/static/media/icon-instagram.39b15bf9.svg",
+    "static/media/icon-twitter.svg": "/static/media/icon-twitter.de158395.svg",
+    "static/media/main-photo.png": "/static/media/main-photo.5f562db9.png",
+    "static/media/three-dots.svg": "/static/media/three-dots.09d7e9e0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8ebae7e1.js",
+    "static/js/2.a212e2ca.chunk.js",
+    "static/css/main.89137113.chunk.css",
+    "static/js/main.15a0148d.chunk.js"
+  ]
+}

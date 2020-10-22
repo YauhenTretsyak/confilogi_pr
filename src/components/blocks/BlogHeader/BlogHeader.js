@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BlogSearchHeader = ({ title, typeHeader }) => {
+const BlogSearchHeader = ({ title }) => {
   return (
     <h3 className='blog_search__header' >
       <div className='blog_search__span_wrapper'>
