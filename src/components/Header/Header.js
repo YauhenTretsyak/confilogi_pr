@@ -3,38 +3,43 @@ import fb from '../../assets/svg/icon-facebook.svg';
 import twitter from '../../assets/svg/icon-twitter.svg';
 import instagram from '../../assets/svg/icon-instagram.svg';
 import threeDots from '../../assets/svg/three-dots.svg';
+// import Data from 
+// import Navigation from '../blocks/Navigation/Navigation';
 
 function Header() {
   return (
     <>
       <header className='header'>
         <div className='box_wrapper'>
-          <div classname='header__social-media-wrapper'>
-            <div classname='header__social-media'>
+          <div className='header_wrapper'>
+            <div className='header_social-media'>
               <img
-                classname='header__social-media__item'
+                className='header_social-media_item'
                 src={fb}
                 alt='fb-logo'
               />
               <img
-                classname='header__social-media__item'
+                className='header_social-media_item'
                 src={twitter}
                 alt='twitter-logo'
               />
               <img
-                classname='header__social-media__item'
+                className='header_social-media_item'
                 src={instagram}
                 alt='instagram-logo'
               />
             </div>
-            <img src={threeDots} alt='menu' />
+            <img className='header_menu' src={threeDots} alt='menu' />
           </div>
-          <div className='logo-wrapper'>
-            <h1 className='logo'>Shine like a</h1>
-            <h1 className='logo logo-star'>Star!</h1>
+          <div className='logo'>
+            <h1 className='logo_item'>Shine like a</h1>
+            <h1 className='logo_item logo_item-star'>Star!</h1>
           </div>
-          <p className='header__text'>Poznaj pikantne fakty z życia gwiazd!</p>
-          <span className=''></span>
+          <p className='header_text'>Poznaj pikantne fakty z życia gwiazd!</p>
+          <span className='header_highlight'></span>
+
+        
+          <span className='header_highlight'></span>
         </div>
       </header>
     </>
