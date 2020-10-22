@@ -1,13 +1,26 @@
 .date {
-    display: flex;
-    margin-bottom: 1rem;
-}
+  display: flex;
+  margin-bottom: 1rem;
 
-.date_text {
+  &_text {
     color: $color_grey-light;
     margin-left: 1rem;
+    &::first-letter {
+        text-transform: uppercase;
+    }
+  }
 }
 
-.date_text::first-letter {
-    text-transform: uppercase;
+.date-blog-posts {
+  display: flex;
+  margin-bottom: 0;
+
+  &_text {
+    font-size: $font_size-12;
+    color: $color_grey-light;
+    margin-left: 1rem;
+    &::first-letter {
+        text-transform: uppercase;
+    }
+  }
 }
