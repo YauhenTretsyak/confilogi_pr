@@ -1,0 +1,33 @@
+.blog_post_item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 154px;
+      height: 99px;
+    }
+  }
+
+  &__content {
+    width: 221px;
+    font-family: 'Roboto-Bold';
+    font-size: $font_size-16;
+    &-wrapper {
+      position: relative;
+    }
+  }
+
+  &__date_wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}

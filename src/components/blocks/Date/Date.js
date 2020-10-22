@@ -3,11 +3,11 @@ import clock from '../../../assets/svg/icon-clock.svg';
 import moment from 'moment';
 import 'moment/locale/pl';
 
-const Date = () => {
+const Date = ({ classnameDate, classnameText }) => {
   return (
-    <div className='date'>
-      <img src={clock} alt=''></img>
-      <p className='date_text'>{moment().format('MMMM Do YYYY')}</p>
+    <div className={`date ${classnameDate}`}>
+      <img src={clock} alt='clock'></img>
+      <p className={`date_text ${classnameText}`}>{moment().format('MMMM Do YYYY')}</p>
     </div>
   );
 };
