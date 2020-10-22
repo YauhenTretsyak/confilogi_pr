@@ -73,4 +73,13 @@
   font-style: normal;
 }
 
+// SegoeUI-Regular
+@font-face {
+  font-family: 'SegoeUI-Regular';
+  src: url('../fonts/SegoeUi-Regular.woff2') format('woff2'),
+    url('../fonts/SegoeUi-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $font: 'Roboto-Regular';
