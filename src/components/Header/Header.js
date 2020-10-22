@@ -2,16 +2,32 @@ import React from 'react';
 import fb from '../../assets/svg/icon-facebook.svg';
 import twitter from '../../assets/svg/icon-twitter.svg';
 import instagram from '../../assets/svg/icon-instagram.svg';
+import threeDots from '../../assets/svg/three-dots.svg';
 
 function Header() {
   return (
     <>
       <header className='header'>
-        <div>
-          <div className='header__social-media'>
-            <img src={fb} alt='fb-logo' />
-            <img src={twitter} alt='twitter-logo' />
-            <img src={instagram} alt='instagram-logo' />
+        <div className='box_wrapper'>
+          <div classname='header__social-media-wrapper'>
+            <div classname='header__social-media'>
+              <img
+                classname='header__social-media__item'
+                src={fb}
+                alt='fb-logo'
+              />
+              <img
+                classname='header__social-media__item'
+                src={twitter}
+                alt='twitter-logo'
+              />
+              <img
+                classname='header__social-media__item'
+                src={instagram}
+                alt='instagram-logo'
+              />
+            </div>
+            <img src={threeDots} alt='menu' />
           </div>
           <div className='logo-wrapper'>
             <h1 className='logo'>Shine like a</h1>
