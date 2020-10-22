@@ -1,5 +1,7 @@
 import React from 'react';
 import BlogHeader from '../blocks/BlogHeader/BlogHeader.js';
+import BlogPostItem from '../blocks/BlogPostItem/BlogPostItem.js'
+import imgTestLink from '../../assets/photo/aside-dzieki-tym.png'
 
 
 const BlogPosts = () => {
@@ -9,6 +11,7 @@ const BlogPosts = () => {
         typeHeader={'blog_header'} 
         title={'Ostatnie posty'}
       />
+      <BlogPostItem imgUrl={ imgTestLink } />
     </section>
   )
 };
