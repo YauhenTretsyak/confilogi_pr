@@ -2,73 +2,94 @@
   max-width: 100%;
   width: 100%;
 
+  &_links {
+    color: $color_grey-dark;
+    font-size: $font_size-12;
+    margin-bottom: 2rem;
 
-  @media only screen and (min-width: 768px){
+    @media only screen and (min-width: 1104px) {
+      font-size: $font_size-16;
+    }
+  }
+
+  &_links_item {
+    text-decoration: none;
+    color: $color_grey-dark;
+  }
+
+  &_btn {
+    text-transform: uppercase;
+    font-weight: $font_weight-bold;
+    margin-bottom: 2rem;
+  }
+
+  &_info {
+    @media only screen and (min-width: 400px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &_title {
+    font-family: 'AmsiProNarw-BlackItalic';
+    font-size: $font_size-30;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    @media only screen and (min-width: 1104px) {
+      font-size: $font_size-37;
+    }
+  }
+
+  &_img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  &_subtitle {
+    text-transform: uppercase;
+    font-weight: $font_weight-bold;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  @media only screen and (min-width: 768px) {
     max-width: 768px;
   }
 
-  @media only screen and (min-width: 1104px){
+  @media only screen and (min-width: 1104px) {
     max-width: 1104px;
   }
 
-  @media only screen and (min-width: 1301px){
+  @media only screen and (min-width: 1301px) {
     max-width: 818px;
   }
 }
 
-.blog_links {
-  color: $color_grey-dark;
-  font-size: $font_size-12;
-  margin-bottom: 2rem;
+.paragraph {
+  &_pink-text {
+    color: $color_pink-main;
+  
+    &-bold {
+      color: $color_pink-main;
+      font-weight: $font_weight-bold;
+    }
+  }
 
-  @media only screen and (min-width: 1104px) {
-    font-size: $font_size-16;
+  &_text-bold {
+    font-weight: $font_weight-bold;
+  }
+
+  &_text-italic {
+    font-style: italic;
   }
 }
 
-.blog_links_item {
-  text-decoration: none;  
-  color: $color_grey-dark;
+.quotation {
+  display: flex;
+  position: relative;
 }
 
-.blog_btn {
-  text-transform: uppercase;
-  font-weight: $font_weight-bold;
-  margin-bottom: 2rem;
-}
-
-.blog_info {
-  @media only screen and (min-width: 400px) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.blog_title {
-  font-family: 'AmsiProNarw-BlackItalic';
-  font-size: $font_size-30;
-  text-align: center;
-  margin-bottom: 2rem;
-
-  @media only screen and (min-width: 1104px) {
-    font-size: $font_size-37;
-  }
-}
-
-.pink-text {
-  color: $color_pink-main;
-}
-
-.blog_img {
-  width: 100%;
-  margin-bottom: 2rem;
-}
-
-.pink-text-bold {
-  color: $color_pink-main;
-  font-weight: $font_weight-bold;
-}
-
-.text-bold {
-  font-weight: $font_weight-bold;
+.quotation_img {
+  width: 2rem;
 }

@@ -5,6 +5,7 @@ import mainPhoto from '../../assets/photo/main-photo.png';
 import Date from '../blocks/Date/Date.js';
 import Author from '../blocks/Author/Author.js';
 import Paragraph from '../blocks/Paragraph/Paragraph.js';
+import quotation from '../../assets/svg/quatation-mark.svg';
 
 const Blog = () => {
   return (
@@ -21,7 +22,7 @@ const Blog = () => {
       </div>
       <h1 className='blog_title'>
         Wow! Niesamowity sekret Kylie Jenner odkryty – dzięki{' '}
-        <span className='pink-text'>TEJ</span> prostej metodzie z łatwością
+        <span className='paragraph_pink-text'>TEJ</span> prostej metodzie z łatwością
         powiększysz i ujędrnisz biust oraz pośladki tak jak ona!
       </h1>
       <img className='blog_img' src={mainPhoto} alt='kylie-jenner'></img>
@@ -32,16 +33,18 @@ const Blog = () => {
         Okazuje się, że jej obfity, kształtny biust i pośladki nie są wynikiem
         genetyki, ani – co dziwniejsze – chirurgii plastycznej. Za te piękne,
         kobiece kształty odpowiada{' '}
-        <span className='pink-text-bold'>nieinwazyjna naturalna metoda!</span>
+        <span className='paragraph_pink-text-bold'>
+          nieinwazyjna naturalna metoda!
+        </span>
         Gdyby celebrytka nie przyznała tego sama, ciężko byłoby uwierzyć,{' '}
-        <span className='pink-text-bold'>
+        <span className='paragraph_pink-text-bold'>
           że swoje nieziemskie krągłości zawdzięcza wyłącznie temu innowacyjnemu
           żelowi.
         </span>
       </Paragraph>
       <Paragraph>
         Ta wiadomość wstrząsnęła fanami. Niech każda z nas zada sobie pytanie –
-        <span className='text-bold'>
+        <span className='paragraph_text-bold'>
           czy gdyby istniała możliwość poprawienia swoich walorów, bez wydawania
           dużej ilości pieniędzy, nie chciałybyśmy z niej skorzystać?
         </span>{' '}
@@ -52,8 +55,50 @@ const Blog = () => {
         plastycznej – nie chciałybyśmy spróbować?
       </Paragraph>
       <Paragraph>
-        Nasza redakcja na pewno powiedziałaby: <span className='text-bold'>TAK!</span> A Wy jak, Kochane? ;)
+        Nasza redakcja na pewno powiedziałaby:{' '}
+        <span className='paragraph_text-bold'>TAK!</span> A Wy jak, Kochane? ;)
       </Paragraph>
+      <h2 className='blog_subtitle'>
+        Sprawdźmy, gdzie tkwi sekret idealnych piersi
+      </h2>
+      <Paragraph>
+        Kylie niedawno urodziła swoje pierwsze dziecko. Kiedy w formie lepszej
+        niż sprzed ciąży pojawiła się na okładkach najbardziej znanych
+        tabloidów, fani byli w szoku.{' '}
+        <span className='paragraph_pink-text-bold'>
+          Figura gwiazdy wyglądała idealnie – płaski brzuch, krągłe, jędrne
+          pośladki i ten doskonały, WIELKI BIUST!
+        </span>
+      </Paragraph>
+      <Paragraph>
+        <span className='paragraph_text-bold'>Jak ona to zrobiła?</span>
+      </Paragraph>
+      <Paragraph>
+        Gwiazda zdradziła swój sekret na Instagramie. Kylie nie wstydzi się
+        mówić o metodzie, która sprawiła, że jej piersi wyglądają idealnie!
+        Jeszcze niedawno wspominała też o wypełniaczach, dzięki którym jej usta
+        wyglądają tak ponętnie i seksownie. Dzisiaj zdradza nam sekret swoich
+        ponętnych krągłości.
+      </Paragraph>
+      <div className='quotation'>
+        <img className='quotation_img' src={quotation} alt='' />
+        <Paragraph>
+          <span className='paragraph_text-italic'>
+            Sekrety mojej sylwetki nie są żadną tajemnicą! Dementuję wszystkie
+            plotki dotyczące tego, że miałam jakiekolwiek operacje plastyczne.
+            Wszystko, co osiągnęłam w pracy nad sylwetką, udało mi się dokonać
+            całkowicie naturalnymi metodami. W przypadku biustu i pośladków to
+            właśnie ten żel w 1 miesiąc dodał im objętości. Sensual Shape to
+            produkt w pełni naturalny [sprawdzaliśmy skład – zero chemii,
+            wyłącznie naturalne składniki – red.], który poprzez stymulację
+            tkanki tłuszczowej powiększa piersi i pośladki!
+          </span>
+        </Paragraph>
+        <img className='quotation_img' src={quotation} alt='' />
+      </div>
+      <div>
+        {/* <Instagram /> */}
+      </div>
     </section>
   );
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import fb from '../../assets/svg/icon-facebook.svg';
 import twitter from '../../assets/svg/icon-twitter.svg';
 import instagram from '../../assets/svg/icon-instagram.svg';
@@ -6,7 +6,9 @@ import threeDots from '../../assets/svg/three-dots.svg';
 import data from '../../data/Data.js';
 import Navigation from '../blocks/Navigation/Navigation';
 
-function Header() {
+const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <>
       <header className='header'>
@@ -29,7 +31,7 @@ function Header() {
                 alt='instagram-logo'
               />
             </div>
-            <img className='header_menu' src={threeDots} alt='menu' />
+            <img className='header_menu' src={threeDots} alt='menu' onClick={() => setShowMenu(showMenu === true ? false : true)}/> 
           </div>
           <div className='logo'>
             <h1 className='logo_item'>Shine like a</h1>
@@ -37,13 +39,13 @@ function Header() {
           </div>
           <p className='header_text'>Poznaj pikantne fakty z życia gwiazd!</p>
           <span className='header_highlight'></span>
-          <div className='header_navigation'>
+          <nav className={showMenu ? 'header_navigation show' : 'header_navigation'}>
           {
             data.navigationLinks.map((link, index) => {
               return <Navigation key={index} text={link} styleName={'header_navigation_item'}/>
             } )
           }
-          </div>
+          </nav>
           <span className='header_highlight'></span>
         </div>
       </header>
@@ -52,3 +54,4 @@ function Header() {
 }
 
 export default Header;
+
