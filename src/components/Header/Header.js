@@ -7,16 +7,20 @@ function Header() {
   return (
     <>
       <header className='header'>
-        <div className='header__social-media'>
-          <img src={fb} />
-          <img src={twitter} />
-          <img src={instagram} />
+        <div>
+          <div className='header__social-media'>
+            <img src={fb} alt='fb-logo' />
+            <img src={twitter} alt='twitter-logo' />
+            <img src={instagram} alt='instagram-logo' />
+          </div>
+          <div className='logo-wrapper'>
+            <h1 className='logo'>Shine like a</h1>
+            <h1 className='logo logo-star'>Star!</h1>
+          </div>
+          <p className='header__text'>Poznaj pikantne fakty z życia gwiazd!</p>
+          <span className=''></span>
         </div>
-        <h1>Shine like a</h1>
-        <h1>Star</h1>
-        <p>Poznaj pikantne fakty z życia gwiazd!</p>
       </header>
-      <span></span>
     </>
   );
 }
