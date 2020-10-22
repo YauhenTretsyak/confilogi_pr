@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Header/Header.js';
 import Blog from '../Blog/Blog.js';
 import BlogPosts from '../BlogPosts/BlogPosts.js';
+import Footer from '../Footer/Footer.js';
 
 function App() {
   return (
