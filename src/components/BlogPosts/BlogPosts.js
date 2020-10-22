@@ -11,7 +11,6 @@ const BlogPosts = () => {
   return (
     <section className='blog_posts'>
       <BlogHeader 
-        typeHeader={'blog_header'} 
         title={'Ostatnie posty'}
       />
       <BlogPostItem imgUrl={ imgTestLink } content={ testContent } />

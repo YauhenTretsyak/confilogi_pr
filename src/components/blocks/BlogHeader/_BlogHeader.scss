@@ -17,21 +17,3 @@
     }
   }
 }
-
-.blog_header {
-  &__header {
-    width: 100%;
-    height: fit-content;
-    margin-bottom: 27px;
-    padding: 11px 0;
-    font-family: 'Roboto-Bold';
-    font-size: $font_size-22;
-  }
-
-  &__span_wrapper {
-    & > span {
-      min-width: 30px;
-      border-bottom: 4px solid $color_pink-main;
-    }
-  }
-}
