@@ -1,0 +1,31 @@
+.footer {
+  padding: 18px 0;
+  font-family: 'SegoeUI-Regular';
+  font-size: $font_size-18;
+  color: $color_white;
+  background-color: $color_black;
+
+  &_content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_copyright {
+    opacity: .5;
+  }
+
+  &_link {
+    padding: 0 10px;
+    border-right: 2px solid $color_white;
+    font-size: $font_size-18;
+    text-decoration: none;
+    color: $color_white;
+    opacity: .25;
+
+    &:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
+  }
+}
