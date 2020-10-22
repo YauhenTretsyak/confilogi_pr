@@ -1,7 +1,8 @@
 @import './styles/_colors.scss';
 @import './styles/_typography.scss';
 @import './styles/_base.scss';
-@import './components/blocks/Button/Button.scss';
+@import './components/blocks/Button/_Button.scss';
+@import './components/blocks/Navigation/_Navigation.scss';
 
 @import './components/Header/_Header.scss';
 @import './components/Footer/_Footer.scss';

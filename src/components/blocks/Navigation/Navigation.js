@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Navigation = (props) => {
-  return <a href='/'>{props.text}</a>;
+const Navigation = ({text, styleName}) => {
+  return <a className={styleName} href='/'>{text}</a>;
 };
 
 export default Navigation;
