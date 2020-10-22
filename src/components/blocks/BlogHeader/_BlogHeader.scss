@@ -1,0 +1,35 @@
+.blog_search {
+  &__header {
+    width: 100%;
+    height: fit-content;
+    padding: 11px 0;
+    border-bottom: 2px solid $color_grey-extraLight;
+    font-family: 'Roboto-Bold';
+    font-size: $font_size-22;
+  }
+
+  &__span_wrapper {
+    margin-bottom: -10px;
+    & > span {
+      min-width: 30%;
+      border-bottom: 4px solid $color_pink-main;
+    }
+  }
+}
+
+.blog_header {
+  &__header {
+    width: 100%;
+    height: fit-content;
+    padding: 11px 0;
+    font-family: 'Roboto-Bold';
+    font-size: $font_size-22;
+  }
+
+  &__span_wrapper {
+    & > span {
+      min-width: 30px;
+      border-bottom: 4px solid $color_pink-main;
+    }
+  }
+}

@@ -1,10 +1,14 @@
 import React from 'react';
-import BlogSearchHeader from '../blocks/BlogSearchItem/BlogSearchHeader/BlogSearchHeader.js';
+import BlogHeader from '../blocks/BlogHeader/BlogHeader.js';
+
 
 const BlogPosts = () => {
   return (
     <section className='blog_posts'>
-      <BlogSearchHeader />
+      <BlogHeader 
+        typeHeader={'blog_header'} 
+        title={'Ostatnie posty'}
+      />
     </section>
   )
 };
