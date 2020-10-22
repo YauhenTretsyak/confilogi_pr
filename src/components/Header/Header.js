@@ -3,8 +3,8 @@ import fb from '../../assets/svg/icon-facebook.svg';
 import twitter from '../../assets/svg/icon-twitter.svg';
 import instagram from '../../assets/svg/icon-instagram.svg';
 import threeDots from '../../assets/svg/three-dots.svg';
-// import Data from 
-// import Navigation from '../blocks/Navigation/Navigation';
+import data from '../../data/Data.js';
+import Navigation from '../blocks/Navigation/Navigation';
 
 function Header() {
   return (
@@ -37,8 +37,13 @@ function Header() {
           </div>
           <p className='header_text'>Poznaj pikantne fakty z życia gwiazd!</p>
           <span className='header_highlight'></span>
-
-        
+          <div className='header_navigation'>
+          {
+            data.navigationLinks.map((link, index) => {
+              return <Navigation key={index} text={link} styleName={'header_navigation_item'}/>
+            } )
+          }
+          </div>
           <span className='header_highlight'></span>
         </div>
       </header>

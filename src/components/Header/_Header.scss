@@ -27,9 +27,44 @@
     opacity: 0.2;
   }
 
+  &_highlight:last-child {
+    display: none;
+  }
+
+  &_navigation {
+    display: none;
+  }
+
+
   @media only screen and (min-width: 1104px) {
+    &_highlight {
+      margin-bottom: 0;
+    }
+
+    &_highlight:last-child {
+      margin-bottom: 3rem;
+      display: block;
+    }
+
     &_menu {
       display: none;
+    }
+
+    &_navigation {
+      display: block;
+      height: 6rem;
+      line-height: 6rem;
+      text-align: center;
+    }
+
+    &_navigation_item {
+      text-decoration: none;
+      color: $color_black_additional;
+      font-size: $font_size-20;
+      font-weight: $font_weight-bold;
+      text-transform: uppercase;
+      margin-right: 4.5rem;
+      margin-left: 4.5rem;
     }
   }
 }

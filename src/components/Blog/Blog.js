@@ -7,8 +7,8 @@ const Blog = () => {
       <p></p>
       <Button text='Przemiany gwiazd' />
       {/* <Date /> */}
-      <h1></h1>
-      <img></img>
+      {/* <h1></h1>
+      <img></img> */}
     </section>
   )
 };
