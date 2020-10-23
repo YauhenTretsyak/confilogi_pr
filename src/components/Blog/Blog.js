@@ -1,18 +1,23 @@
 import React from 'react';
+
 import Button from '../blocks/Button/Button.js';
 import Navigation from '../blocks/Navigation/Navigation.js';
 import CommentForm from '../blocks/CommentForm/CommentForm.js';
-import mainPhoto from '../../assets/photo/main-photo.png';
 import Date from '../blocks/Date/Date.js';
 import Author from '../blocks/Author/Author.js';
 import Paragraph from '../blocks/Paragraph/Paragraph.js';
-import quotation from '../../assets/svg/quatation-mark.svg';
 import InstagramPost from '../blocks/InstagramPost/InstagramPost.js';
-import avatar1 from '../../assets/instagram/avatar-kylie.png';
-import verified from '../../assets/instagram/blue-check.svg';
-import photo1 from '../../assets/photo/instagram-kylie.png';
-import photo2 from '../../assets/photo/instagram-kylie-2.png';
+import Comercial from '../blocks/Comercial/Comercial.js';
+
+import mainPhoto from '../../assets/photo/main-photo.png';
+import quotation from '../../assets/svg/quatation-mark.svg';
+
+
+import banner3 from '../../assets/photo/banner3.png';
 import data from '../../data/Data.js';
+
+//dodać do data informacje o postach instagramowych Kylie Jenner
+//zmienić w instagram post jednen paragraf!
 
 const Blog = () => {
   return (
@@ -105,24 +110,15 @@ const Blog = () => {
       </div>
       <div className='instagram-posts-wrapper'>
         <InstagramPost
-          avatar={avatar1}
-          name={'kyliejenner'}
-          verified={verified}
-          followers={'197,9 mln obserwujących'}
-          mainPhoto={photo1}
-          numberOfLikes={'10 001 587'}
-          text={
-            "The secret of my perfect body is not a secret at all! I deny all rumors that I've ever had any plastic surgery. Everything that I achieved, I achieved by using only natural methods. My breasts and buttocks look like this because I've been using this gel for one month. Sensual Shape is completely natural product that naturally enlarges all the curves by increasing the fat cells!"
-          }
-          postHashtags={[
-            '#body',
-            '#bust',
-            '#happy',
-            ' #cutebody',
-            '#bodybuilding',
-            '#love',
-          ]}
-          numberOfComments={'12 tys.'}
+          avatar={data.instagramPost1.avatar}
+          name={data.instagramPost1.name}
+          verified={data.instagramPost1.verified}
+          followers={data.instagramPost1.followers}
+          mainPhoto={data.instagramPost1.mainPhoto}
+          numberOfLikes={data.instagramPost1.numberOfLikes}
+          text={data.instagramPost1.text}
+          postHashtags={data.instagramPost1.postHashtags}
+          numberOfComments={data.instagramPost1.numberOfComments}
         />
         <Paragraph>
           Niestety, ze względu na burzę, jaką wywołała ta wiadomość wśród
@@ -140,24 +136,15 @@ const Blog = () => {
           który wrzuciliśmy specjalnie dla Was!
         </Paragraph>
         <InstagramPost
-          avatar={avatar1}
-          name={'kyliejenner'}
-          followers={'197,9 mln obserwujących'}
-          verified={verified}
-          mainPhoto={photo2}
-          numberOfLikes={'8 521 507'}
-          text={
-            "This is the secret of my look. Try it yourself, it's worth it!"
-          }
-          postHashtags={[
-            '#curves',
-            ' #celebrity',
-            '#star',
-            '#beauty',
-            '#breast',
-            '#pretty',
-          ]}
-          numberOfComments={'7,6 tys.'}
+         avatar={data.instagramPost2.avatar}
+         name={data.instagramPost2.name}
+         verified={data.instagramPost2.verified}
+         followers={data.instagramPost2.followers}
+         mainPhoto={data.instagramPost2.mainPhoto}
+         numberOfLikes={data.instagramPost2.numberOfLikes}
+         text={data.instagramPost2.text}
+         postHashtags={data.instagramPost2.postHashtags}
+         numberOfComments={data.instagramPost2.numberOfComments}
         />
       </div>
       <Paragraph>
@@ -208,7 +195,30 @@ const Blog = () => {
         kolejnych artykułach. Wiemy już, gdzie można go kupić – na tej stronie
         możecie otrzymać go ze specjalną zniżką!
       </Paragraph>
-      <CommentForm/>
+      {/* <Comercial 
+          bgImage={ banner3 }
+          btnTilte={ 'Sprawdź' }
+        /> */}
+      <Paragraph>
+        <span className='paragraph_pink-text-italic'>
+          Kliknij w baner powyżej i zamów żel sensual shape ze zniżką 70%!
+        </span>
+      </Paragraph>
+      <Paragraph>
+        Ilość produktów objętych promocją jest ograniczona. Zamów Sensual Shape
+        i uzyskaj idealne ciało zaledwie w jeden miesiąc!
+      </Paragraph>
+      <Paragraph>
+        Tylko na tej stronie możesz zamówić oryginalny certyfikowany produkt ze
+        specjalną zniżką!
+      </Paragraph>
+      <Paragraph>
+        UWAGA! Naszej redakcji udało się dotrzeć do producenta oryginalnego żelu
+        i otrzymać specjalną zniżkę – 70% dla czytelników! Jednak musicie się
+        pospieszyć – ilość produktów objętych promocją jest ograniczona. Mamy
+        tylko 200 sztuk!
+      </Paragraph>
+      <CommentForm />
     </section>
   );
 };

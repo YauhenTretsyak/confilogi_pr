@@ -83,6 +83,13 @@
   &_text-italic {
     font-style: italic;
   }
+
+  &_pink-text-italic {
+    text-transform: uppercase;
+    font-style: italic;
+    color: $color_pink-main;
+    font-weight: $font_weight-bold;
+  }
 }
 
 .quotation {
@@ -127,3 +134,4 @@
     padding: 0 0.9rem;
   }
 }
+
