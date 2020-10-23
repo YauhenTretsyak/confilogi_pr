@@ -87,9 +87,25 @@
 
 .quotation {
   display: flex;
-  position: relative;
+  margin-bottom: 2rem;
 }
 
 .quotation_img {
   width: 2rem;
+  align-self: flex-start;
+  margin-right: 1rem;
+
+  @media only screen and (min-width: 1104px) {
+    width: 4rem;
+  }
 }
+
+.quotation_img:last-child {
+  align-self: flex-end;
+  transform: rotate(180deg);
+}
+
+.quotation > .paragraph_text {
+  margin-bottom: 0;
+}
+
