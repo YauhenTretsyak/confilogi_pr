@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/confilogi_pr/static/css/main.de708d4c.chunk.css",
-    "main.js": "/confilogi_pr/static/js/main.71e26537.chunk.js",
-    "main.js.map": "/confilogi_pr/static/js/main.71e26537.chunk.js.map",
+    "main.css": "/confilogi_pr/static/css/main.cddeac34.chunk.css",
+    "main.js": "/confilogi_pr/static/js/main.fbb77a37.chunk.js",
+    "main.js.map": "/confilogi_pr/static/js/main.fbb77a37.chunk.js.map",
     "runtime-main.js": "/confilogi_pr/static/js/runtime-main.1629f126.js",
     "runtime-main.js.map": "/confilogi_pr/static/js/runtime-main.1629f126.js.map",
-    "static/js/2.383f6c72.chunk.js": "/confilogi_pr/static/js/2.383f6c72.chunk.js",
-    "static/js/2.383f6c72.chunk.js.map": "/confilogi_pr/static/js/2.383f6c72.chunk.js.map",
+    "static/js/2.3d02dce6.chunk.js": "/confilogi_pr/static/js/2.3d02dce6.chunk.js",
+    "static/js/2.3d02dce6.chunk.js.map": "/confilogi_pr/static/js/2.3d02dce6.chunk.js.map",
     "index.html": "/confilogi_pr/index.html",
-    "precache-manifest.016bf83b7b61a89e5277b6382ab579dd.js": "/confilogi_pr/precache-manifest.016bf83b7b61a89e5277b6382ab579dd.js",
+    "precache-manifest.8946a8ebb0e17f8528bc6441d43f3020.js": "/confilogi_pr/precache-manifest.8946a8ebb0e17f8528bc6441d43f3020.js",
     "service-worker.js": "/confilogi_pr/service-worker.js",
-    "static/css/main.de708d4c.chunk.css.map": "/confilogi_pr/static/css/main.de708d4c.chunk.css.map",
-    "static/js/2.383f6c72.chunk.js.LICENSE.txt": "/confilogi_pr/static/js/2.383f6c72.chunk.js.LICENSE.txt",
+    "static/css/main.cddeac34.chunk.css.map": "/confilogi_pr/static/css/main.cddeac34.chunk.css.map",
+    "static/js/2.3d02dce6.chunk.js.LICENSE.txt": "/confilogi_pr/static/js/2.3d02dce6.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/confilogi_pr/static/media/roboto-regular-webfont.99935f2c.woff",
     "static/media/aside-dzieki-tym.png": "/confilogi_pr/static/media/aside-dzieki-tym.32a178fd.png",
     "static/media/aside-poznaj-historie.png": "/confilogi_pr/static/media/aside-poznaj-historie.4a5b609c.png",
@@ -27,6 +27,8 @@
     "static/media/icon-twitter.svg": "/confilogi_pr/static/media/icon-twitter.de158395.svg",
     "static/media/instagram-kylie-2.png": "/confilogi_pr/static/media/instagram-kylie-2.37fd818b.png",
     "static/media/instagram-kylie.png": "/confilogi_pr/static/media/instagram-kylie.6a7abdf4.png",
+    "static/media/instagram-lovely.png": "/confilogi_pr/static/media/instagram-lovely.64a09130.png",
+    "static/media/instagram-moniiis.png": "/confilogi_pr/static/media/instagram-moniiis.f83fbd10.png",
     "static/media/like.svg": "/confilogi_pr/static/media/like.04f7e403.svg",
     "static/media/main-photo.png": "/confilogi_pr/static/media/main-photo.5f562db9.png",
     "static/media/menu.svg": "/confilogi_pr/static/media/menu.e5c8f64c.svg",
@@ -37,8 +39,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1629f126.js",
-    "static/js/2.383f6c72.chunk.js",
-    "static/css/main.de708d4c.chunk.css",
-    "static/js/main.71e26537.chunk.js"
+    "static/js/2.3d02dce6.chunk.js",
+    "static/css/main.cddeac34.chunk.css",
+    "static/js/main.fbb77a37.chunk.js"
   ]
 }
