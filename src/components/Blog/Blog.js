@@ -12,7 +12,7 @@ import avatar1 from '../../assets/instagram/avatar-kylie.png';
 import verified from '../../assets/instagram/blue-check.svg';
 import photo1 from '../../assets/photo/instagram-kylie.png';
 import photo2 from '../../assets/photo/instagram-kylie-2.png';
-
+import data from '../../data/Data.js';
 
 const Blog = () => {
   return (
@@ -103,7 +103,7 @@ const Blog = () => {
         </Paragraph>
         <img className='quotation_img' src={quotation} alt='' />
       </div>
-      <div className='instagram-post-wrapper'>
+      <div className='instagram-posts-wrapper'>
         <InstagramPost
           avatar={avatar1}
           name={'kyliejenner'}
@@ -114,16 +114,29 @@ const Blog = () => {
           text={
             "The secret of my perfect body is not a secret at all! I deny all rumors that I've ever had any plastic surgery. Everything that I achieved, I achieved by using only natural methods. My breasts and buttocks look like this because I've been using this gel for one month. Sensual Shape is completely natural product that naturally enlarges all the curves by increasing the fat cells!"
           }
-          postHashtags={['#body', '#bust', '#happy',' #cutebody', '#bodybuilding', '#love']}
+          postHashtags={[
+            '#body',
+            '#bust',
+            '#happy',
+            ' #cutebody',
+            '#bodybuilding',
+            '#love',
+          ]}
           numberOfComments={'12 tys.'}
         />
         <Paragraph>
           Niestety, ze względu na burzę, jaką wywołała ta wiadomość wśród
           chirurgów plastycznych, post gwiazdy ZOSTAŁ USUNIĘTY!!! Jak podają
-          zagraniczne media, konto Kylie zostało zhakowane w wyniku spisku
-          klinik medycyny estetycznej, które za wszelką cenę chcą ukryć
-          informację o nowym naturalnym żelu powiększającym piersi. Na szczęście
-          nasze fantastyczne koleżanki z redakcji zdążyły wcześniej pobrać post,
+          zagraniczne media,{' '}
+          <span className='paragraph_text-bold'>
+            konto Kylie zostało zhakowane
+          </span>{' '}
+          w wyniku spisku klinik medycyny estetycznej, które za wszelką cenę
+          chcą ukryć informację o nowym naturalnym żelu powiększającym piersi.
+          Na szczęście nasze fantastyczne{' '}
+          <span className='paragraph_text-bold'>
+            koleżanki z redakcji zdążyły wcześniej pobrać post,
+          </span>{' '}
           który wrzuciliśmy specjalnie dla Was!
         </Paragraph>
         <InstagramPost
@@ -136,10 +149,65 @@ const Blog = () => {
           text={
             "This is the secret of my look. Try it yourself, it's worth it!"
           }
-          postHashtags={['#curves',' #celebrity', '#star', '#beauty', '#breast', '#pretty']}
+          postHashtags={[
+            '#curves',
+            ' #celebrity',
+            '#star',
+            '#beauty',
+            '#breast',
+            '#pretty',
+          ]}
           numberOfComments={'7,6 tys.'}
         />
       </div>
+      <Paragraph>
+        Ta formuła to prawdziwy hit na rynku! Zawiera fitoestrogeny, które w
+        zupełnie naturalny sposób{' '}
+        <span className='paragraph_pink-text-bold'>
+          powiększają biust o 3 rozmiary w zaledwie miesiąc!
+        </span>{' '}
+        Cały świat dosłownie oszalał na jego punkcie. Jak się okazało, produkt
+        od niedawna dostępny jest też w Polsce, a Instagram aż kipi od Waszych
+        cudownych zdjęć przed i po! &hearts;
+      </Paragraph>
+      <div className='instagram-posts-wrapper'>
+        {data.instagramSection.map((instagramPost) => {
+          return (
+            <InstagramPost
+              avatar={instagramPost.avatar}
+              name={instagramPost.name}
+              city={instagramPost.city}
+              mainPhoto={instagramPost.mainPhoto}
+              numberOfLikes={instagramPost.numberOfLikes}
+              text={instagramPost.text}
+              postHashtags={instagramPost.postHashtags}
+              numberOfComments={instagramPost.numberOfComments}
+            />
+          );
+        })}
+      </div>
+      <Paragraph>
+        Nasza redakcja zawsze wnikliwie sprawdza skład, gdy słyszy o konkretnych
+        nowościach – dlatego chcieliśmy się dowiedzieć, co takiego niesamowitego
+        kryje się w Sensual Shape, który stał się HITEM. Okazuje się, że to
+        całkowicie naturalny środek, który stymuluje tkankę tłuszczową i
+        ujędrnia miejsca w obszarach, na które pozostaje zaaplikowany. Dzięki
+        regularnemu stosowaniu i aplikacji,{' '}
+        <span className='paragraph_text-bold'>
+          piersi wzrastają nawet o 3 rozmiary w zaledwie 1 miesiąc, a pupa
+          powiększa się i zaokrągla identycznie, jak u wszystkich Kardashianek!
+        </span>
+      </Paragraph>
+      <Paragraph>
+        Ploteczki donoszą, że używają jej też inne gwiazdy, które mogą pochwalić
+        się świetnymi krągłościami, takie jak Jennifer Lopez, Jennifer Aniston i
+        Mila Kunis.
+      </Paragraph>
+      <Paragraph>
+        My też zamówiłyśmy ten żel i na pewno podzielimy się z Wami efektami w
+        kolejnych artykułach. Wiemy już, gdzie można go kupić – na tej stronie
+        możecie otrzymać go ze specjalną zniżką!
+      </Paragraph>
       <CommentForm/>
     </section>
   );
