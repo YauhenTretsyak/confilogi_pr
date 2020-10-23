@@ -36,11 +36,11 @@ const InstagramPost = ({
             <p className='instagram-post_header_followers'>{followers ? followers : ''}</p>
             <p className='instagram-post_header_city'>{city ? city : ''}</p>
           </div>
-          <img
+          {verified ? <img
               className='instagram-post_header_verified'
-              src={verified ? verified : ''}
+              src={verified}
               alt='instagram-verifed'
-            ></img>
+            ></img> : null}
         </div>
         <button className='instagram-post_header_menu'>
           <img
