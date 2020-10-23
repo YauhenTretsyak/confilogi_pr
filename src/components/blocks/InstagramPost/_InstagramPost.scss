@@ -1,0 +1,181 @@
+.instagram-post {
+  max-width: 530px;
+  width: 100%;
+  background-color: $color_white;
+  font-family: 'MariadPro-Regular';
+  box-shadow: 3px 3px 5px 0px rgba(199, 199, 199, 1);
+  margin-bottom: 2rem;
+
+  &_header {
+    display: flex;
+    font-size: $font_size-12;
+    font-weight: $font_weight-bold;
+    justify-content: space-between;
+    padding: 1rem;
+
+    &_flex {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    &_link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: $color_black;
+    }
+
+    &_avatar {
+      width: 2.2rem;
+      margin-right: 1rem;
+
+      @media only screen and (min-width: 1104px) {
+        width: 5rem;
+      }
+    }
+
+    &_name {
+      font-weight: $font_weight-semiBold;
+
+      @media only screen and (min-width: 1104px) {
+        font-size: $font_size-18;
+      }
+    }
+
+    &_verified {
+      width: 0.8rem;
+      margin-left: 0.25rem;
+      margin-top: 0.5rem;
+      align-self: flex-start;
+
+      @media only screen and (min-width: 1104px) {
+        width: 1.6rem;
+        position: absolute;
+        top: 0;
+        left: 67%;
+      }
+    }
+
+    &_followers {
+      display: none;
+
+      @media only screen and (min-width: 1104px) {
+        display: block;
+        color: $color_grey-light;
+        font-size: $font_size-15;
+        font-weight: $font_weight-light;
+      }
+    }
+
+    &_menu {
+      border: none;
+      background-color: transparent;
+
+      &_img {
+        width: 1.3rem;
+        margin-right: 1rem;
+
+        @media only screen and (min-width: 1104px) {
+          width: 2.5rem;
+        }
+      }
+    }
+  }
+
+  &_main-photo {
+    width: 100%;
+  }
+
+  &_interactions {
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_one-interaction {
+    width: 1.7rem;
+    margin-right: 1.3rem;
+
+    @media only screen and (min-width: 1104px) {
+      width: 3rem;
+    }
+  }
+
+  &_comment {
+    width: 1.4rem;
+
+    @media only screen and (min-width: 1104px) {
+      width: 2.6rem;
+    }
+  }
+
+  &_save {
+    width: 1.2rem;
+
+    @media only screen and (min-width: 1104px) {
+      width: 2.1rem;
+    }
+  }
+
+  &_number-of-likes {
+    font-weight: $font_weight-semiBold;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+
+    @media only screen and (min-width: 1104px) {
+     font-size: $font_size-18;
+    }
+  }
+
+  &_content {
+    margin-bottom: 0.5rem;
+    padding: 0 1rem;
+    font-size: $font_size-11;
+
+    @media only screen and (min-width: 1104px) {
+      font-size: $font_size-14;
+     }
+  }
+
+  &_name {
+    font-weight: $font_weight-semiBold;
+    margin-right: 0.25rem;
+  }
+
+  &_text {
+    font-weight: $font_weight-light;
+  }
+
+  &_hashtags {
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &_one-hashtag {
+    padding: 0 0.15rem;
+    font-size: $font_size-11;
+    color: $color_blue;
+
+    @media only screen and (min-width: 1104px) {
+      font-size: $font_size-14;
+     }
+  }
+
+  &_comments {
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    text-decoration: none;
+
+    &-link {
+        text-decoration: none;
+        font-size: $font_size-10;
+        color: $color-grey-light-additional;
+
+        @media only screen and (min-width: 1104px) {
+          font-size: $font_size-14;
+         }
+    }
+  }
+}

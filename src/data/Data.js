@@ -13,6 +13,7 @@ const blogData = {
   },
   blogPostsForms: {},
   footerLinks: ['Polityka prywatności', 'Mapa strony', 'Cookies'],
+  instagramPost1: []
 };
 
 export default blogData;

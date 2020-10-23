@@ -6,6 +6,12 @@ import Date from '../blocks/Date/Date.js';
 import Author from '../blocks/Author/Author.js';
 import Paragraph from '../blocks/Paragraph/Paragraph.js';
 import quotation from '../../assets/svg/quatation-mark.svg';
+import InstagramPost from '../blocks/InstagramPost/InstagramPost.js';
+import avatar1 from '../../assets/instagram/avatar-kylie.png';
+import verified from '../../assets/instagram/blue-check.svg';
+import photo1 from '../../assets/photo/instagram-kylie.png';
+import photo2 from '../../assets/photo/instagram-kylie-2.png';
+
 
 const Blog = () => {
   return (
@@ -22,8 +28,8 @@ const Blog = () => {
       </div>
       <h1 className='blog_title'>
         Wow! Niesamowity sekret Kylie Jenner odkryty – dzięki{' '}
-        <span className='paragraph_pink-text'>TEJ</span> prostej metodzie z łatwością
-        powiększysz i ujędrnisz biust oraz pośladki tak jak ona!
+        <span className='paragraph_pink-text'>TEJ</span> prostej metodzie z
+        łatwością powiększysz i ujędrnisz biust oraz pośladki tak jak ona!
       </h1>
       <img className='blog_img' src={mainPhoto} alt='kylie-jenner'></img>
       <Paragraph>
@@ -96,8 +102,42 @@ const Blog = () => {
         </Paragraph>
         <img className='quotation_img' src={quotation} alt='' />
       </div>
-      <div>
-        {/* <Instagram /> */}
+      <div className='instagram-post-wrapper'>
+        <InstagramPost
+          avatar={avatar1}
+          name={'kyliejenner'}
+          verified={verified}
+          followers={'197,9 mln obserwujących'}
+          mainPhoto={photo1}
+          numberOfLikes={'10 001 587'}
+          text={
+            "The secret of my perfect body is not a secret at all! I deny all rumors that I've ever had any plastic surgery. Everything that I achieved, I achieved by using only natural methods. My breasts and buttocks look like this because I've been using this gel for one month. Sensual Shape is completely natural product that naturally enlarges all the curves by increasing the fat cells!"
+          }
+          postHashtags={['#body', '#bust', '#happy',' #cutebody', '#bodybuilding', '#love']}
+          numberOfComments={'12 tys.'}
+        />
+        <Paragraph>
+          Niestety, ze względu na burzę, jaką wywołała ta wiadomość wśród
+          chirurgów plastycznych, post gwiazdy ZOSTAŁ USUNIĘTY!!! Jak podają
+          zagraniczne media, konto Kylie zostało zhakowane w wyniku spisku
+          klinik medycyny estetycznej, które za wszelką cenę chcą ukryć
+          informację o nowym naturalnym żelu powiększającym piersi. Na szczęście
+          nasze fantastyczne koleżanki z redakcji zdążyły wcześniej pobrać post,
+          który wrzuciliśmy specjalnie dla Was!
+        </Paragraph>
+        <InstagramPost
+          avatar={avatar1}
+          name={'kyliejenner'}
+          followers={'197,9 mln obserwujących'}
+          verified={verified}
+          mainPhoto={photo2}
+          numberOfLikes={'8 521 507'}
+          text={
+            "This is the secret of my look. Try it yourself, it's worth it!"
+          }
+          postHashtags={['#curves',' #celebrity', '#star', '#beauty', '#breast', '#pretty']}
+          numberOfComments={'7,6 tys.'}
+        />
       </div>
     </section>
   );
