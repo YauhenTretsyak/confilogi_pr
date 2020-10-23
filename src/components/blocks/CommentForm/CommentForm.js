@@ -56,7 +56,7 @@ const CommentForm = () => {
           <textarea className="comment_form__user_msg" name="user_message" required="" type="text"></textarea>
 
           <div className='comment_form__bottom-wrapper'>
-            <div className='comment_form__btn-wrapper'>
+            <div className='comment_form__btn-wrapper add_btn-wrapper'>
               <Button 
                 text={'Dodaj zdjęcie'} 
                 styleName={'comment_form__btn comment_form__btn_light add_btn'}
