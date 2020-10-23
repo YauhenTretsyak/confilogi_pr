@@ -79,16 +79,21 @@
   &__btn {
     height: auto;
     width: 100%;
-    min-width: 228px;
-    padding: 20px 50px;
+    max-width: 169px;
+    padding: 12px 35px;
 
     @media only screen and (min-width: 576px) {
       width: fit-content;
+      max-width: unset;
       min-width: 228px;
+      padding: 20px 50px;
     }
     
     & > a {
-      font-size: $font_size-18;
+      font-size: $font_size-14;
+      @media only screen and (min-width: 576px) {
+        font-size: $font_size-18;
+      }
     }
 
     &_light {
@@ -105,16 +110,25 @@
       align-items: center;
       flex-wrap: wrap;
       margin: 0 auto;
-      justify-content: space-between;
+      justify-content: space-around;
       width: 100%;
 
       @media only screen and (min-width: 576px) {
+        justify-content: space-between;
         width: 482px;
       }
 
       @media only screen and (min-width: 768px) {
         margin: unset;
       }
+
+      & > button:first-child {
+        margin-bottom: 26px;
+
+        @media only screen and (min-width: 576px) {
+          margin-bottom: 0;
+        }
+      } 
     }
   }
 
@@ -125,12 +139,42 @@
   }
 }
 
-// .add_btn {
-//   min-width: unset;
-//   width: 110px;
-//   font-size: $font_size-12;
+.add_btn {
+  min-width: unset;
+  width: 123px;
+  padding: 12px 12px;
+  font-size: $font_size-12;
 
-//   & > a {
-//     font-size: $font_size-12;
-//   }
-// }
+  @media only screen and (min-width: 576px) {
+    width: unset;
+    min-width: 228px;
+    padding: 20px 50px;
+  }
+
+  & > a {
+    font-size: $font_size-12;
+
+    @media only screen and (min-width: 576px) {
+      font-size: $font_size-18;
+    }
+  }
+
+  &-wrapper {
+    justify-content: space-between;
+    margin: unset;
+    width: 261px;
+
+    @media only screen and (min-width: 576px) {
+      margin: 0 auto;
+      width: 482px;
+    }
+
+    @media only screen and (min-width: 768px) {
+      margin: unset;
+    }
+
+    & > button:first-child {
+      margin-bottom: 0;
+    } 
+  }
+}
