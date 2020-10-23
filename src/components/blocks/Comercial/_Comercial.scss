@@ -1,0 +1,32 @@
+.comercial{
+  &__content-wrapper {
+    position: relative;
+    width: 390px;
+    margin-top: 38px;
+    padding-top: 38px;
+    border-top: 1px solid $color_grey-light_20;
+  }
+
+  &__btn {
+    position: absolute;
+    left: 50%;
+    bottom: 29px;
+    width: fit-content;
+    padding: 13px 26px;
+    height: auto;
+    transform: translateX(-50%);
+    font-family: 'OpenSans-Bold';
+    font-size: $font_size-21;
+
+    &_white {
+      background-color: $color_white;
+      .btn_link {
+        color: $color_black_additional;
+      }
+    }
+
+    &_orange {
+      background-color: $color_orange;
+    }
+  }
+}

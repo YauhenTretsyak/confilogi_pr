@@ -2,10 +2,16 @@ import React from 'react';
 import BlogHeader from '../blocks/BlogHeader/BlogHeader.js';
 import BlogPostItem from '../blocks/BlogPostItem/BlogPostItem.js';
 import BlogSearchItem from '../blocks/BlogSearchItem/BlogSearchItem.js';
+import Comercial from '../blocks/Comercial/Comercial.js';
 
 import imgTestLink from '../../assets/photo/aside-dzieki-tym.png';
 import imgTestLink2 from '../../assets/photo/aside-szokujace-wyznanie.png';
 import imgTestLink3 from '../../assets/photo/aside-poznaj-historie.png';
+
+import banner1 from '../../assets/photo/banner1.png';
+import banner2 from '../../assets/photo/banner2.png';
+
+// dodać do Data btnStyle, btnTitle !!!!!!!
 
 
 const BlogPosts = () => {
@@ -35,7 +41,18 @@ const BlogPosts = () => {
         btnTitle={'Zapisz'}
         content={ testContentSearch }
       />
-      <div className='blog_posts__search-bottom_border'></div>
+
+      <div className='blog_post__comercial-wrapper'>
+        <Comercial 
+          bgImage={ banner1 }
+          btnTilte={ 'Sprawdź' }
+          btnStyle = { 'white' }
+        />
+        <Comercial 
+          bgImage={ banner2 }
+          btnTilte={ 'Sprawdź' }
+        />
+      </div>
 
     </section>
   )
