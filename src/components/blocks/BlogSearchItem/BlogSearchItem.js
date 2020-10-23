@@ -1,5 +1,6 @@
 import React from 'react';
 import BlogHeader from '../BlogHeader/BlogHeader.js';
+import Button from '../Button/Button.js';
 
 const BlogSearchItem = ({ title, btnTitle, content, placeHolderTitle }) => {
 
@@ -21,9 +22,11 @@ const BlogSearchItem = ({ title, btnTitle, content, placeHolderTitle }) => {
           className='blog_search_item__form_input'
           placeholder={ placeHolderTitle }
         />
-        <button className='blog_search_item__form_btn' name="submit" type="submit">
-          { btnTitle }
-        </button>
+        <Button 
+          text={ btnTitle }
+          styleName={'blog_search_item__form_btn'}
+          btnForm={ true }
+        />
       </form>
     </>
   )

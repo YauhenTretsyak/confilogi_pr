@@ -1,0 +1,31 @@
+.blog_search_item {
+  &__content {
+    margin-bottom: 15px;
+    font-family: 'Roboto-Bold';
+    font-size: $font_size-16;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 322px;
+    margin: 0 auto;
+
+    &_input {
+      width: 100%;
+      margin-bottom: 14px;
+      padding: 12px 15px;
+      border: 1px solid $color_grey;
+      font-size: $font_size-12;
+      color: $color_grey;
+    }
+
+    &_btn {
+      width: fit-content;
+      min-width: 73px;
+      padding: 11px 15px;
+    }
+  }
+}
