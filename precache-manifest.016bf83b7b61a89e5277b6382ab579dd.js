@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f790162951ebe5f340f2699a7162a204",
+    "revision": "01e8df2444f9957b83f39abe4d4b3185",
     "url": "/confilogi_pr/index.html"
   },
   {
-    "revision": "4ab2a06687f9da92054b",
-    "url": "/confilogi_pr/static/css/main.773f3f85.chunk.css"
+    "revision": "a1036a1c7f51997da4ad",
+    "url": "/confilogi_pr/static/css/main.de708d4c.chunk.css"
   },
   {
-    "revision": "d7d576c99437a57d20ab",
-    "url": "/confilogi_pr/static/js/2.51c84cf2.chunk.js"
+    "revision": "e076b16ae996729a91b9",
+    "url": "/confilogi_pr/static/js/2.383f6c72.chunk.js"
   },
   {
     "revision": "48bd7bad75130283b8e683aa665baa5c",
-    "url": "/confilogi_pr/static/js/2.51c84cf2.chunk.js.LICENSE.txt"
+    "url": "/confilogi_pr/static/js/2.383f6c72.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4ab2a06687f9da92054b",
-    "url": "/confilogi_pr/static/js/main.c8d2bda1.chunk.js"
+    "revision": "a1036a1c7f51997da4ad",
+    "url": "/confilogi_pr/static/js/main.71e26537.chunk.js"
   },
   {
     "revision": "c648aba5b51fe355b338",
@@ -84,6 +84,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/confilogi_pr/static/media/banner2.870d3d6c.png"
   },
   {
+    "revision": "02fe98a83fdf268dee8130bad4ef52fd",
+    "url": "/confilogi_pr/static/media/blue-check.02fe98a8.svg"
+  },
+  {
+    "revision": "a6b84ed441e277723919f9f18dad44b7",
+    "url": "/confilogi_pr/static/media/comment.a6b84ed4.svg"
+  },
+  {
     "revision": "0fb6fa34e27e11004971f8ef7c07a722",
     "url": "/confilogi_pr/static/media/icon-author.0fb6fa34.svg"
   },
@@ -104,8 +112,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/confilogi_pr/static/media/icon-twitter.de158395.svg"
   },
   {
+    "revision": "37fd818bcc37f471f0eeef39d86a2e5e",
+    "url": "/confilogi_pr/static/media/instagram-kylie-2.37fd818b.png"
+  },
+  {
+    "revision": "6a7abdf41949272412643cd1955871c2",
+    "url": "/confilogi_pr/static/media/instagram-kylie.6a7abdf4.png"
+  },
+  {
+    "revision": "04f7e40335a34863296804223ddbc7e3",
+    "url": "/confilogi_pr/static/media/like.04f7e403.svg"
+  },
+  {
     "revision": "5f562db97b7d0adea556968b0e7a5852",
     "url": "/confilogi_pr/static/media/main-photo.5f562db9.png"
+  },
+  {
+    "revision": "e5c8f64cf5009dd9a75b17bfdb04a0ff",
+    "url": "/confilogi_pr/static/media/menu.e5c8f64c.svg"
   },
   {
     "revision": "6311a1d44670a3c2741855fb837dd844",
@@ -158,6 +182,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "99935f2c2ca3e9a74aae6b6f78b7950c",
     "url": "/confilogi_pr/static/media/roboto-regular-webfont.99935f2c.woff"
+  },
+  {
+    "revision": "82fa7e2e59f838bbafd21d2d389870b2",
+    "url": "/confilogi_pr/static/media/save.82fa7e2e.svg"
+  },
+  {
+    "revision": "28ccb21c0479b58a5db12c5b659d2600",
+    "url": "/confilogi_pr/static/media/share.28ccb21c.svg"
   },
   {
     "revision": "09d7e9e0c16699ed417da22c18bbbffe",
