@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "be9eba822b792c30b68dae33b7627ded",
+    "revision": "f790162951ebe5f340f2699a7162a204",
     "url": "/confilogi_pr/index.html"
   },
   {
-    "revision": "452d96e071557e3f51e7",
-    "url": "/confilogi_pr/static/css/main.564c357a.chunk.css"
+    "revision": "4ab2a06687f9da92054b",
+    "url": "/confilogi_pr/static/css/main.773f3f85.chunk.css"
   },
   {
-    "revision": "7eda449e1d1447281973",
-    "url": "/confilogi_pr/static/js/2.6d6643a5.chunk.js"
+    "revision": "d7d576c99437a57d20ab",
+    "url": "/confilogi_pr/static/js/2.51c84cf2.chunk.js"
   },
   {
     "revision": "48bd7bad75130283b8e683aa665baa5c",
-    "url": "/confilogi_pr/static/js/2.6d6643a5.chunk.js.LICENSE.txt"
+    "url": "/confilogi_pr/static/js/2.51c84cf2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "452d96e071557e3f51e7",
-    "url": "/confilogi_pr/static/js/main.e33bb619.chunk.js"
+    "revision": "4ab2a06687f9da92054b",
+    "url": "/confilogi_pr/static/js/main.c8d2bda1.chunk.js"
   },
   {
     "revision": "c648aba5b51fe355b338",
@@ -48,6 +48,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/confilogi_pr/static/media/Montserrat-Bold.35b1efc0.woff2"
   },
   {
+    "revision": "602a6da715d3eddf2dc9a65148241903",
+    "url": "/confilogi_pr/static/media/OpenSans-Bold.602a6da7.woff"
+  },
+  {
+    "revision": "cbd728bb0047c14298e97591af1e7b9e",
+    "url": "/confilogi_pr/static/media/OpenSans-Bold.cbd728bb.woff2"
+  },
+  {
     "revision": "685196d199b1f5f41b71ca3f0f444952",
     "url": "/confilogi_pr/static/media/SegoeUi-Regular.685196d1.woff2"
   },
@@ -66,6 +74,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "423b1bc05642ebcadba82fe46f17dfcb",
     "url": "/confilogi_pr/static/media/aside-szokujace-wyznanie.423b1bc0.png"
+  },
+  {
+    "revision": "b9ea44ce1a53c276e57b51f8421346f7",
+    "url": "/confilogi_pr/static/media/banner1.b9ea44ce.png"
+  },
+  {
+    "revision": "870d3d6cdabca67c7eb4d8bdf473736a",
+    "url": "/confilogi_pr/static/media/banner2.870d3d6c.png"
   },
   {
     "revision": "0fb6fa34e27e11004971f8ef7c07a722",

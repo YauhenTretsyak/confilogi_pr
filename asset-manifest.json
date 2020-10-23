@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/confilogi_pr/static/css/main.564c357a.chunk.css",
-    "main.js": "/confilogi_pr/static/js/main.e33bb619.chunk.js",
-    "main.js.map": "/confilogi_pr/static/js/main.e33bb619.chunk.js.map",
+    "main.css": "/confilogi_pr/static/css/main.773f3f85.chunk.css",
+    "main.js": "/confilogi_pr/static/js/main.c8d2bda1.chunk.js",
+    "main.js.map": "/confilogi_pr/static/js/main.c8d2bda1.chunk.js.map",
     "runtime-main.js": "/confilogi_pr/static/js/runtime-main.1629f126.js",
     "runtime-main.js.map": "/confilogi_pr/static/js/runtime-main.1629f126.js.map",
-    "static/js/2.6d6643a5.chunk.js": "/confilogi_pr/static/js/2.6d6643a5.chunk.js",
-    "static/js/2.6d6643a5.chunk.js.map": "/confilogi_pr/static/js/2.6d6643a5.chunk.js.map",
+    "static/js/2.51c84cf2.chunk.js": "/confilogi_pr/static/js/2.51c84cf2.chunk.js",
+    "static/js/2.51c84cf2.chunk.js.map": "/confilogi_pr/static/js/2.51c84cf2.chunk.js.map",
     "index.html": "/confilogi_pr/index.html",
-    "precache-manifest.d96b6d8bddee0207a26d13c794c601f1.js": "/confilogi_pr/precache-manifest.d96b6d8bddee0207a26d13c794c601f1.js",
+    "precache-manifest.d4515c55486bfd62b9f820e828bb27fd.js": "/confilogi_pr/precache-manifest.d4515c55486bfd62b9f820e828bb27fd.js",
     "service-worker.js": "/confilogi_pr/service-worker.js",
-    "static/css/main.564c357a.chunk.css.map": "/confilogi_pr/static/css/main.564c357a.chunk.css.map",
-    "static/js/2.6d6643a5.chunk.js.LICENSE.txt": "/confilogi_pr/static/js/2.6d6643a5.chunk.js.LICENSE.txt",
+    "static/css/main.773f3f85.chunk.css.map": "/confilogi_pr/static/css/main.773f3f85.chunk.css.map",
+    "static/js/2.51c84cf2.chunk.js.LICENSE.txt": "/confilogi_pr/static/js/2.51c84cf2.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/confilogi_pr/static/media/roboto-regular-webfont.99935f2c.woff",
     "static/media/aside-dzieki-tym.png": "/confilogi_pr/static/media/aside-dzieki-tym.32a178fd.png",
     "static/media/aside-poznaj-historie.png": "/confilogi_pr/static/media/aside-poznaj-historie.4a5b609c.png",
     "static/media/aside-szokujace-wyznanie.png": "/confilogi_pr/static/media/aside-szokujace-wyznanie.423b1bc0.png",
+    "static/media/banner1.png": "/confilogi_pr/static/media/banner1.b9ea44ce.png",
+    "static/media/banner2.png": "/confilogi_pr/static/media/banner2.870d3d6c.png",
     "static/media/icon-author.svg": "/confilogi_pr/static/media/icon-author.0fb6fa34.svg",
     "static/media/icon-clock.svg": "/confilogi_pr/static/media/icon-clock.61a97845.svg",
     "static/media/icon-facebook.svg": "/confilogi_pr/static/media/icon-facebook.ce4ba319.svg",
@@ -27,8 +29,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1629f126.js",
-    "static/js/2.6d6643a5.chunk.js",
-    "static/css/main.564c357a.chunk.css",
-    "static/js/main.e33bb619.chunk.js"
+    "static/js/2.51c84cf2.chunk.js",
+    "static/css/main.773f3f85.chunk.css",
+    "static/js/main.c8d2bda1.chunk.js"
   ]
 }
