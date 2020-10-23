@@ -54,18 +54,20 @@ const CommentForm = () => {
           <input className="comment_form__user_name" name="user_name" required="" type="text" />
           <span>Treść</span>
           <textarea className="comment_form__user_msg" name="user_message" required="" type="text"></textarea>
-        </form>
 
-        <div className='comment_form__btn-wrapper'>
-          <Button 
-            text={'Dodaj zdjęcie'} 
-            styleName={'comment_form__btn comment_form__btn_light'}
-          />
-          <Button 
-            text={'Dodaj komentarz'} 
-            styleName={'comment_form__btn'}
-          />
+          <div className='comment_form__bottom-wrapper'>
+            <div className='comment_form__btn-wrapper'>
+              <Button 
+                text={'Dodaj zdjęcie'} 
+                styleName={'comment_form__btn comment_form__btn_light add_btn'}
+              />
+              <Button 
+                text={'Dodaj komentarz'} 
+                styleName={'comment_form__btn add_btn'}
+              />
+            </div>
         </div>
+        </form>
       </div>
     </>
   )
