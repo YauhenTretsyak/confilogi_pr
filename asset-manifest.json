@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/confilogi_pr/static/css/main.cddeac34.chunk.css",
-    "main.js": "/confilogi_pr/static/js/main.fbb77a37.chunk.js",
-    "main.js.map": "/confilogi_pr/static/js/main.fbb77a37.chunk.js.map",
+    "main.css": "/confilogi_pr/static/css/main.234d6315.chunk.css",
+    "main.js": "/confilogi_pr/static/js/main.c8cc85cf.chunk.js",
+    "main.js.map": "/confilogi_pr/static/js/main.c8cc85cf.chunk.js.map",
     "runtime-main.js": "/confilogi_pr/static/js/runtime-main.1629f126.js",
     "runtime-main.js.map": "/confilogi_pr/static/js/runtime-main.1629f126.js.map",
     "static/js/2.3d02dce6.chunk.js": "/confilogi_pr/static/js/2.3d02dce6.chunk.js",
     "static/js/2.3d02dce6.chunk.js.map": "/confilogi_pr/static/js/2.3d02dce6.chunk.js.map",
     "index.html": "/confilogi_pr/index.html",
-    "precache-manifest.8946a8ebb0e17f8528bc6441d43f3020.js": "/confilogi_pr/precache-manifest.8946a8ebb0e17f8528bc6441d43f3020.js",
+    "precache-manifest.86b79c358c9508e8e935df56275360ea.js": "/confilogi_pr/precache-manifest.86b79c358c9508e8e935df56275360ea.js",
     "service-worker.js": "/confilogi_pr/service-worker.js",
-    "static/css/main.cddeac34.chunk.css.map": "/confilogi_pr/static/css/main.cddeac34.chunk.css.map",
+    "static/css/main.234d6315.chunk.css.map": "/confilogi_pr/static/css/main.234d6315.chunk.css.map",
     "static/js/2.3d02dce6.chunk.js.LICENSE.txt": "/confilogi_pr/static/js/2.3d02dce6.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/confilogi_pr/static/media/roboto-regular-webfont.99935f2c.woff",
     "static/media/aside-dzieki-tym.png": "/confilogi_pr/static/media/aside-dzieki-tym.32a178fd.png",
@@ -40,7 +40,7 @@
   "entrypoints": [
     "static/js/runtime-main.1629f126.js",
     "static/js/2.3d02dce6.chunk.js",
-    "static/css/main.cddeac34.chunk.css",
-    "static/js/main.fbb77a37.chunk.js"
+    "static/css/main.234d6315.chunk.css",
+    "static/js/main.c8cc85cf.chunk.js"
   ]
 }
