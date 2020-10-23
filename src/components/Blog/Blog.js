@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../blocks/Button/Button.js';
 import Navigation from '../blocks/Navigation/Navigation.js';
+import CommentForm from '../blocks/CommentForm/CommentForm.js';
 import mainPhoto from '../../assets/photo/main-photo.png';
 import Date from '../blocks/Date/Date.js';
 import Author from '../blocks/Author/Author.js';
@@ -99,6 +100,7 @@ const Blog = () => {
       <div>
         {/* <Instagram /> */}
       </div>
+      <CommentForm/>
     </section>
   );
 };

@@ -1,0 +1,42 @@
+.comment_form {
+  &__header {
+    margin-bottom: 25px;
+    font-family: 'Roboto-Bold';
+    font-size: $font_size-25;
+  }
+
+  &__article {
+    margin-bottom: 20px;
+    font-size: $font_size-18;
+
+    & > span {
+      padding-left: 3px;
+    }
+  }
+
+  &__text_registration {
+    margin-bottom: 30px;
+    font-size: $font_size-18;
+    color: $color_grey-light;
+  }
+
+  &__btn {
+    height: auto;
+    width: fit-content;
+    min-width: 228px;
+    padding: 20px 50px;
+    
+    & > a {
+      font-size: $font_size-18;
+    }
+
+    &_light {
+      border: 1px solid $color_grey;
+      background-color: $color_white;
+
+      & > a {
+        color: $color_grey;
+      } 
+    }
+  }
+}
