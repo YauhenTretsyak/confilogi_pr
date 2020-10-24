@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/confilogi_pr/static/css/main.4b3d7caf.chunk.css",
-    "main.js": "/confilogi_pr/static/js/main.9d9f9fec.chunk.js",
-    "main.js.map": "/confilogi_pr/static/js/main.9d9f9fec.chunk.js.map",
+    "main.js": "/confilogi_pr/static/js/main.a254d64e.chunk.js",
+    "main.js.map": "/confilogi_pr/static/js/main.a254d64e.chunk.js.map",
     "runtime-main.js": "/confilogi_pr/static/js/runtime-main.1629f126.js",
     "runtime-main.js.map": "/confilogi_pr/static/js/runtime-main.1629f126.js.map",
     "static/js/2.3d02dce6.chunk.js": "/confilogi_pr/static/js/2.3d02dce6.chunk.js",
     "static/js/2.3d02dce6.chunk.js.map": "/confilogi_pr/static/js/2.3d02dce6.chunk.js.map",
     "index.html": "/confilogi_pr/index.html",
-    "precache-manifest.94b15777d9c69ca397a9bbd4c2c94360.js": "/confilogi_pr/precache-manifest.94b15777d9c69ca397a9bbd4c2c94360.js",
+    "precache-manifest.0cee6d75d2537ade027b42a2f834ca5e.js": "/confilogi_pr/precache-manifest.0cee6d75d2537ade027b42a2f834ca5e.js",
     "service-worker.js": "/confilogi_pr/service-worker.js",
     "static/css/main.4b3d7caf.chunk.css.map": "/confilogi_pr/static/css/main.4b3d7caf.chunk.css.map",
     "static/js/2.3d02dce6.chunk.js.LICENSE.txt": "/confilogi_pr/static/js/2.3d02dce6.chunk.js.LICENSE.txt",
@@ -42,6 +42,6 @@
     "static/js/runtime-main.1629f126.js",
     "static/js/2.3d02dce6.chunk.js",
     "static/css/main.4b3d7caf.chunk.css",
-    "static/js/main.9d9f9fec.chunk.js"
+    "static/js/main.a254d64e.chunk.js"
   ]
 }
