@@ -1,11 +1,11 @@
 import React from 'react';
 
-const LinkItem = ({content}) => {
+const LinkItem = ({ content, link }) => {
   return (
     <>
-      <a className="footer_link" href="/">{content}</a>
+      <a className="footer_link" href={ link }>{ content }</a>
     </>
   )
 };
 
-export default LinkItem;
+export default LinkItem; 

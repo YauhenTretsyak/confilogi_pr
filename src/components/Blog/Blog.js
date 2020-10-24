@@ -27,7 +27,11 @@ const Blog = () => {
         <Navigation text={'Przemiany gwiazd'} styleName={'blog_links_item'} /> /{' '}
         <span>"Wow! Niesamowity sekret Kylie..."</span>
       </div>
-      <Button styleName='blog_btn' text='Przemiany gwiazd' />
+      <Button 
+        styleName='blog_btn' 
+        btnLink='/'
+        text='Przemiany gwiazd' 
+      />
       <div className='blog_info'>
         <Date />
         <Author />
