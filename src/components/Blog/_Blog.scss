@@ -17,24 +17,11 @@
     color: $color_grey-dark;
   }
 
-<<<<<<< HEAD
-  &__btn {
-    text-transform: uppercase;
-    font-weight: $font_weight-bold;
-    margin-bottom: 2rem;
-
-    @media only screen and (min-width: 1104px) {
-      font-size: $font_size-16;
-      width: fit-content;
-      padding: 1.5rem;
-    }
-=======
   &_btn {
     margin-bottom: 2rem;
     padding: 13px 26px;
     text-transform: uppercase;
     font-weight: $font_weight-bold;
->>>>>>> f799eb19c4ff829e988d931aa596d82592c0fcd7
   }
 
   &__info {

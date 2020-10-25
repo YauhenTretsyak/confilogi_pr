@@ -1,8 +1,12 @@
-.comercial {
+.comercial {  
   &__content-wrapper {
     position: relative;
-    width: 390px;
+    width: 100%;
     margin-top: 38px;
+  }
+
+  &__img {
+    max-width: 100%;
   }
 
   &__btn {
@@ -38,7 +42,6 @@
 
   
   &-wide-blog__btn {
-    height: 7rem;
     left: 81%;
     bottom: 8%;
     box-shadow: 5px 3px 6px 1px $color-pink-additional;
