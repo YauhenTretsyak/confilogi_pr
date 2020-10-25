@@ -3,6 +3,7 @@ import React from 'react';
 import Button from '../blocks/Button/Button.js';
 import Navigation from '../blocks/Navigation/Navigation.js';
 import CommentForm from '../blocks/CommentForm/CommentForm.js';
+import Comments from '../Comments/Comments.js';
 import Date from '../blocks/Date/Date.js';
 import Author from '../blocks/Author/Author.js';
 import Paragraph from '../blocks/Paragraph/Paragraph.js';
@@ -223,6 +224,7 @@ const Blog = () => {
         tylko 200 sztuk!
       </Paragraph>
       <CommentForm />
+      <Comments />
     </section>
   );
 };

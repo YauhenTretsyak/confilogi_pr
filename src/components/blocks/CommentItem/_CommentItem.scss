@@ -1,0 +1,56 @@
+.commentItem {
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &__avatar {
+    width: 65px;
+    height: 65px;
+
+    &_img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  &__name {
+    font-family: 'Roboto-Bold';
+    font-size: $font_size-18;
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__date {
+    font-size: $font_size-14;
+    color: $color_grey-light;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    &-wrapper {
+      margin-left: 9px;
+      width: 90%;
+    }
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: $font_size-16;
+  }
+
+  &__btn {
+    padding: 12px 16px;
+    font-size: $font_size-16;
+  }
+}

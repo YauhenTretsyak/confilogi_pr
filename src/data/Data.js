@@ -16,6 +16,9 @@ import imgPostItem3 from '../assets/photo/aside-poznaj-historie.png';
 import comercialBanner1 from '../assets/photo/banner1.png';
 import comercialBanner2 from '../assets/photo/banner2.png';
 
+//** comments images */
+import avatarImg1 from '../assets/photo/testimonial-ania.png';
+import avatarImg2 from '../assets/photo/testimonial-anette.png';
 
 const blogData = {
   navigationLinks: [
@@ -152,8 +155,24 @@ const blogData = {
     },
   ],
 
+  //** Comments */
+  comments : [
+    {
+      authorName: 'Ania',
+      avatarImg: avatarImg1,
+      commentDate: '20 godzin temu',
+      commentContent: 'O ja, ale efekty! Aż trudno uwierzyć, że Kylie osiągnęła to wszystko bez skalpela. :)',
+    },
+    {
+      authorName: 'Ania',
+      avatarImg: avatarImg2,
+      commentDate: '20 godzin temu',
+      commentContent: 'O ja, ale efekty! Aż trudno uwierzyć, że Kylie osiągnęła to wszystko bez skalpela. :)',
+    }
+  ],
+
   //** Footer */ 
-  footerLinks: [
+  footerLinks : [
     { title: 'Polityka prywatności', link: '/'},
     { title: 'Mapa strony', link: '/'},
     { title: 'Cookies', link: '/' }
