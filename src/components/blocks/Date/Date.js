@@ -7,7 +7,9 @@ const Date = ({ classnameDate, classnameText }) => {
   return (
     <div className={`date ${classnameDate}`}>
       <img src={clock} alt='clock'></img>
-      <p className={`date_text ${classnameText}`}>{moment().format('MMMM Do YYYY')}</p>
+      <p className={`date_text ${classnameText}`}>
+        {moment().subtract(4, 'days').format('MMMM Do YYYY')}
+      </p>
     </div>
   );
 };

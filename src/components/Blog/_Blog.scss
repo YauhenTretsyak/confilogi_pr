@@ -2,7 +2,7 @@
   max-width: 100%;
   width: 100%;
 
-  &_links {
+  &__links {
     color: $color_grey-dark;
     font-size: $font_size-12;
     margin-bottom: 2rem;
@@ -12,25 +12,31 @@
     }
   }
 
-  &_links_item {
+  &__links__item {
     text-decoration: none;
     color: $color_grey-dark;
   }
 
-  &_btn {
+  &__btn {
     text-transform: uppercase;
     font-weight: $font_weight-bold;
     margin-bottom: 2rem;
+
+    @media only screen and (min-width: 1104px) {
+      font-size: $font_size-16;
+      width: fit-content;
+      padding: 1.5rem;
+    }
   }
 
-  &_info {
+  &__info {
     @media only screen and (min-width: 400px) {
       display: flex;
       justify-content: space-between;
     }
   }
 
-  &_title {
+  &__title {
     font-family: 'AmsiProNarw-BlackItalic';
     font-size: $font_size-30;
     text-align: center;
@@ -41,12 +47,12 @@
     }
   }
 
-  &_img {
+  &__img {
     width: 100%;
     margin-bottom: 2rem;
   }
 
-  &_subtitle {
+  &__subtitle {
     text-transform: uppercase;
     font-weight: $font_weight-bold;
     line-height: 1.5;
@@ -67,7 +73,7 @@
 }
 
 .paragraph {
-  &_pink-text {
+  &__pink-text {
     color: $color_pink-main;
   
     &-bold {
@@ -76,15 +82,15 @@
     }
   }
 
-  &_text-bold {
+  &__text-bold {
     font-weight: $font_weight-bold;
   }
 
-  &_text-italic {
+  &__text-italic {
     font-style: italic;
   }
 
-  &_pink-text-italic {
+  &__pink-text-italic {
     text-transform: uppercase;
     font-style: italic;
     color: $color_pink-main;
@@ -96,7 +102,7 @@
   display: flex;
   margin-bottom: 2rem;
 
-  &_img {
+  &__img {
     width: 2rem;
     align-self: flex-start;
     margin-right: 1rem;
@@ -123,7 +129,7 @@
   justify-content: center;
   align-items: center;
   padding: 2.8rem 0;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 
   @media only screen and (min-width: 1104px) {
     padding: 5rem 1rem;

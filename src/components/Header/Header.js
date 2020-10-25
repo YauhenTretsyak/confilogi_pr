@@ -12,43 +12,43 @@ const Header = () => {
   return (
     <>
       <header className='header'>
-        <div className='box_wrapper'>
-          <div className='header_wrapper'>
-            <div className='header_social-media'>
-              <img
-                className='header_social-media_item'
+        <div className='box__wrapper'>
+          <div className='header__wrapper'>
+            <div className='header__social-media'>
+              <a href='/'><img
+                className='header__social-media_item'
                 src={fb}
                 alt='fb-logo'
-              />
-              <img
-                className='header_social-media_item'
+              /></a>
+              <a href='/'><img
+                className='header__social-media_item'
                 src={twitter}
                 alt='twitter-logo'
-              />
-              <img
-                className='header_social-media_item'
+              /></a>
+              <a href='/'><img
+                className='header__social-media_item'
                 src={instagram}
                 alt='instagram-logo'
-              />
+              /></a>
             </div>
             <img
-              className='header_menu'
+              className='header__menu'
               src={threeDots}
               alt='menu'
               onClick={() => setShowMenu(showMenu === true ? false : true)}
             />
           </div>
           <div className='logo'>
-            <h1 className='logo_item'>Shine like a</h1>
-            <h1 className='logo_item logo_item-star'>Star!</h1>
+            <h1 className='logo__item'>Shine like a</h1>
+            <h1 className='logo__item logo__item-star'>Star!</h1>
           </div>
-          <p className='header_text'>Poznaj pikantne fakty z życia gwiazd!</p>
-          <span className='header_highlight'></span>
+          <p className='header__text'>Poznaj pikantne fakty z życia gwiazd!</p>
+          <span className='header__highlight'></span>
             <nav
               className={
                 showMenu
-                  ? 'header_navigation header_navigation-show'
-                  : 'header_navigation'
+                  ? 'header__navigation header_navigation-show'
+                  : 'header__navigation'
               }
             >
               {data.navigationLinks.map((link, index) => {
@@ -56,7 +56,7 @@ const Header = () => {
                   <Navigation
                     key={index}
                     text={link}
-                    styleName={'header_navigation_item'}
+                    styleName={'header__navigation_item'}
                   />
                 );
               })}
@@ -64,8 +64,8 @@ const Header = () => {
             <span
               className={
                 showMenu
-                  ? 'header_highlight header_highlight-show'
-                  : 'header_highlight header_highlight-last'
+                  ? 'header__highlight header__highlight-show'
+                  : 'header__highlight header__highlight-last'
               }
             ></span>
         </div>

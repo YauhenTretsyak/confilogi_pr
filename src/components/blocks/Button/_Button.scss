@@ -1,13 +1,14 @@
 .btn {
-    background-color: $color_pink-main;
-    color: $color_white;
-    border: none;
-    height: 4rem;
-    width: 16rem;
-    font-size: $font_size-base;
+  background-color: $color_pink-main;
+  color: $color_white;
+  border: none;
+  height: 4rem;
+  width: 16rem;
+  font-size: $font_size-base;
+  cursor: pointer;
 }
 
 .btn_link {
-    color: $color_white;
-    text-decoration: none;
+  color: $color_white;
+  text-decoration: none;
 }

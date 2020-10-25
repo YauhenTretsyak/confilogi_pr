@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Button from '../blocks/Button/Button.js';
 import Navigation from '../blocks/Navigation/Navigation.js';
@@ -12,32 +12,47 @@ import Comercial from '../blocks/Comercial/Comercial.js';
 import mainPhoto from '../../assets/photo/main-photo.png';
 import quotation from '../../assets/svg/quatation-mark.svg';
 
-
 import banner3 from '../../assets/photo/banner3.png';
+import banner4 from '../../assets/photo/banner4.png';
+
 import data from '../../data/Data.js';
 
-//dodać do data informacje o postach instagramowych Kylie Jenner
 //zmienić w instagram post jednen paragraf!
+//ogarnąć React Helmet!!
+//dodać nowy component na promocje
+//zmienic wielkosc fonta w btn Przemiany gwiazd
+//dodac text1, text2  w instagramPost
 
 const Blog = () => {
+  const [isTablet, setTablet] = useState(window.innerWidth > 625);
+
+  const updateMedia = () => {
+    setTablet(window.innerWidth > 625);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', updateMedia);
+    return () => window.removeEventListener('resize', updateMedia);
+  });
+
   return (
     <section className='blog'>
-      <div className='blog_links'>
-        <Navigation text={'Aktualności'} styleName={'blog_links_item'} /> /{' '}
-        <Navigation text={'Przemiany gwiazd'} styleName={'blog_links_item'} /> /{' '}
+      <div className='blog__links'>
+        <Navigation text={'Aktualności'} styleName={'blog__links__item'} /> /{' '}
+        <Navigation text={'Przemiany gwiazd'} styleName={'blog__links__item'} /> /{' '}
         <span>"Wow! Niesamowity sekret Kylie..."</span>
       </div>
-      <Button styleName='blog_btn' text='Przemiany gwiazd' />
-      <div className='blog_info'>
+      <Button styleName='blog__btn' text='Przemiany gwiazd' />
+      <div className='blog__info'>
         <Date />
         <Author />
       </div>
-      <h1 className='blog_title'>
+      <h1 className='blog__title'>
         Wow! Niesamowity sekret Kylie Jenner odkryty – dzięki{' '}
-        <span className='paragraph_pink-text'>TEJ</span> prostej metodzie z
+        <span className='paragraph__pink-text'>TEJ</span> prostej metodzie z
         łatwością powiększysz i ujędrnisz biust oraz pośladki tak jak ona!
       </h1>
-      <img className='blog_img' src={mainPhoto} alt='kylie-jenner'></img>
+      <img className='blog__img' src={mainPhoto} alt='kylie-jenner'></img>
       <Paragraph>
         Słyszeliście już najnowsze ploteczki? Jedna z najbardziej znanych
         dwudziestolatek, gwiazda urodzona w najseksowniejszej rodzinie na
@@ -45,18 +60,18 @@ const Blog = () => {
         Okazuje się, że jej obfity, kształtny biust i pośladki nie są wynikiem
         genetyki, ani – co dziwniejsze – chirurgii plastycznej. Za te piękne,
         kobiece kształty odpowiada{' '}
-        <span className='paragraph_pink-text-bold'>
+        <span className='paragraph__pink-text-bold'>
           nieinwazyjna naturalna metoda!
         </span>
         Gdyby celebrytka nie przyznała tego sama, ciężko byłoby uwierzyć,{' '}
-        <span className='paragraph_pink-text-bold'>
+        <span className='paragraph__pink-text-bold'>
           że swoje nieziemskie krągłości zawdzięcza wyłącznie temu innowacyjnemu
           żelowi.
         </span>
       </Paragraph>
       <Paragraph>
         Ta wiadomość wstrząsnęła fanami. Niech każda z nas zada sobie pytanie –
-        <span className='paragraph_text-bold'>
+        <span className='paragraph__text-bold'>
           czy gdyby istniała możliwość poprawienia swoich walorów, bez wydawania
           dużej ilości pieniędzy, nie chciałybyśmy z niej skorzystać?
         </span>{' '}
@@ -68,22 +83,22 @@ const Blog = () => {
       </Paragraph>
       <Paragraph>
         Nasza redakcja na pewno powiedziałaby:{' '}
-        <span className='paragraph_text-bold'>TAK!</span> A Wy jak, Kochane? ;)
+        <span className='paragraph__text-bold'>TAK!</span> A Wy jak, Kochane? ;)
       </Paragraph>
-      <h2 className='blog_subtitle'>
+      <h2 className='blog__subtitle'>
         Sprawdźmy, gdzie tkwi sekret idealnych piersi
       </h2>
       <Paragraph>
         Kylie niedawno urodziła swoje pierwsze dziecko. Kiedy w formie lepszej
         niż sprzed ciąży pojawiła się na okładkach najbardziej znanych
         tabloidów, fani byli w szoku.{' '}
-        <span className='paragraph_pink-text-bold'>
+        <span className='paragraph__pink-text-bold'>
           Figura gwiazdy wyglądała idealnie – płaski brzuch, krągłe, jędrne
           pośladki i ten doskonały, WIELKI BIUST!
         </span>
       </Paragraph>
       <Paragraph>
-        <span className='paragraph_text-bold'>Jak ona to zrobiła?</span>
+        <span className='paragraph__text-bold'>Jak ona to zrobiła?</span>
       </Paragraph>
       <Paragraph>
         Gwiazda zdradziła swój sekret na Instagramie. Kylie nie wstydzi się
@@ -93,9 +108,9 @@ const Blog = () => {
         ponętnych krągłości.
       </Paragraph>
       <div className='quotation'>
-        <img className='quotation_img' src={quotation} alt='' />
+        <img className='quotation__img' src={quotation} alt='' />
         <Paragraph>
-          <span className='paragraph_text-italic'>
+          <span className='paragraph__text-italic'>
             Sekrety mojej sylwetki nie są żadną tajemnicą! Dementuję wszystkie
             plotki dotyczące tego, że miałam jakiekolwiek operacje plastyczne.
             Wszystko, co osiągnęłam w pracy nad sylwetką, udało mi się dokonać
@@ -106,7 +121,7 @@ const Blog = () => {
             tkanki tłuszczowej powiększa piersi i pośladki!
           </span>
         </Paragraph>
-        <img className='quotation_img' src={quotation} alt='' />
+        <img className='quotation__img' src={quotation} alt='' />
       </div>
       <div className='instagram-posts-wrapper'>
         <InstagramPost
@@ -124,33 +139,33 @@ const Blog = () => {
           Niestety, ze względu na burzę, jaką wywołała ta wiadomość wśród
           chirurgów plastycznych, post gwiazdy ZOSTAŁ USUNIĘTY!!! Jak podają
           zagraniczne media,{' '}
-          <span className='paragraph_text-bold'>
+          <span className='paragraph__text-bold'>
             konto Kylie zostało zhakowane
           </span>{' '}
           w wyniku spisku klinik medycyny estetycznej, które za wszelką cenę
           chcą ukryć informację o nowym naturalnym żelu powiększającym piersi.
           Na szczęście nasze fantastyczne{' '}
-          <span className='paragraph_text-bold'>
+          <span className='paragraph__text-bold'>
             koleżanki z redakcji zdążyły wcześniej pobrać post,
           </span>{' '}
           który wrzuciliśmy specjalnie dla Was!
         </Paragraph>
         <InstagramPost
-         avatar={data.instagramPost2.avatar}
-         name={data.instagramPost2.name}
-         verified={data.instagramPost2.verified}
-         followers={data.instagramPost2.followers}
-         mainPhoto={data.instagramPost2.mainPhoto}
-         numberOfLikes={data.instagramPost2.numberOfLikes}
-         text={data.instagramPost2.text}
-         postHashtags={data.instagramPost2.postHashtags}
-         numberOfComments={data.instagramPost2.numberOfComments}
+          avatar={data.instagramPost2.avatar}
+          name={data.instagramPost2.name}
+          verified={data.instagramPost2.verified}
+          followers={data.instagramPost2.followers}
+          mainPhoto={data.instagramPost2.mainPhoto}
+          numberOfLikes={data.instagramPost2.numberOfLikes}
+          text={data.instagramPost2.text}
+          postHashtags={data.instagramPost2.postHashtags}
+          numberOfComments={data.instagramPost2.numberOfComments}
         />
       </div>
       <Paragraph>
         Ta formuła to prawdziwy hit na rynku! Zawiera fitoestrogeny, które w
         zupełnie naturalny sposób{' '}
-        <span className='paragraph_pink-text-bold'>
+        <span className='paragraph__pink-text-bold'>
           powiększają biust o 3 rozmiary w zaledwie miesiąc!
         </span>{' '}
         Cały świat dosłownie oszalał na jego punkcie. Jak się okazało, produkt
@@ -180,7 +195,7 @@ const Blog = () => {
         całkowicie naturalny środek, który stymuluje tkankę tłuszczową i
         ujędrnia miejsca w obszarach, na które pozostaje zaaplikowany. Dzięki
         regularnemu stosowaniu i aplikacji,{' '}
-        <span className='paragraph_text-bold'>
+        <span className='paragraph__text-bold'>
           piersi wzrastają nawet o 3 rozmiary w zaledwie 1 miesiąc, a pupa
           powiększa się i zaokrągla identycznie, jak u wszystkich Kardashianek!
         </span>
@@ -195,20 +210,34 @@ const Blog = () => {
         kolejnych artykułach. Wiemy już, gdzie można go kupić – na tej stronie
         możecie otrzymać go ze specjalną zniżką!
       </Paragraph>
-      {/* <Comercial 
-          bgImage={ banner3 }
-          btnTilte={ 'Sprawdź' }
-        /> */}
-      <Paragraph>
+      {
+        <>
+          {isTablet ? (
+            <Comercial
+              blogWide={true}
+              bgImage={banner4}
+              btnTilte={'Kliknij i sprawdź'}
+            />
+          ) : (
+            <Comercial
+              blogSmall={true}
+              bgImage={banner3}
+              btnTilte={'Sprawdź!'}
+            />
+          )}
+        </>
+      }
+      <div className='promotion-wrapper'>
+        {/* <Paragraph>
         <span className='paragraph_pink-text-italic'>
           Kliknij w baner powyżej i zamów żel sensual shape ze zniżką 70%!
         </span>
-      </Paragraph>
-      <Paragraph>
-        Ilość produktów objętych promocją jest ograniczona. Zamów Sensual Shape
-        i uzyskaj idealne ciało zaledwie w jeden miesiąc!
-      </Paragraph>
-      <Paragraph>
+      </Paragraph> */}
+        <Paragraph>
+          Ilość produktów objętych promocją jest ograniczona. Zamów Sensual
+          Shape i uzyskaj idealne ciało zaledwie w jeden miesiąc!
+        </Paragraph>
+        {/* <Paragraph>
         Tylko na tej stronie możesz zamówić oryginalny certyfikowany produkt ze
         specjalną zniżką!
       </Paragraph>
@@ -217,7 +246,8 @@ const Blog = () => {
         i otrzymać specjalną zniżkę – 70% dla czytelników! Jednak musicie się
         pospieszyć – ilość produktów objętych promocją jest ograniczona. Mamy
         tylko 200 sztuk!
-      </Paragraph>
+      </Paragraph> */}
+      </div>
       <CommentForm />
     </section>
   );

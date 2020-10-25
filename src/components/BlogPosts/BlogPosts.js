@@ -43,11 +43,13 @@ const BlogPosts = () => {
       />
 
       <div className='blog_post__comercial-wrapper'>
+        <span className='blog_post__highlight'></span>
         <Comercial 
           bgImage={ banner1 }
           btnTilte={ 'Sprawdź' }
           btnStyle = { 'white' }
         />
+        <span className='blog_post__highlight'></span>
         <Comercial 
           bgImage={ banner2 }
           btnTilte={ 'Sprawdź' }
