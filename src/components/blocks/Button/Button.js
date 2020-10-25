@@ -1,5 +1,7 @@
 import React from 'react';
 
+//** if btnForm === true, resolved Button, else link as a button  */
+
 const Button = ({ text, styleName, btnForm, btnLink }) => {
 
   const ButtonLink = () => {

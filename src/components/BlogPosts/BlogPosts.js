@@ -24,16 +24,13 @@ const BlogPosts = () => {
 
   const comercialItem = dataComercialItem.map((item, index) => {
     return(
-      <>
-        <span className='blog_post__highlight'></span>
-        <Comercial 
-          key={ index + 'apmmndxv65wfvv5' }
-          bgImage={ item.bgImage }
-          btnTilte={ item.btnTilte }
-          btnLink={ item.btnLink }
-          btnStyle = { item.btnStyle }
-        />
-      </>
+      <Comercial 
+        key={ index + 'apmmndxv65wfvv5' }
+        bgImage={ item.bgImage }
+        btnTilte={ item.btnTilte }
+        btnLink={ item.btnLink }
+        btnStyle = { item.btnStyle }
+      />
     );
   });
 

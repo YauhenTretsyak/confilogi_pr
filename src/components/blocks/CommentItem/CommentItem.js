@@ -8,6 +8,7 @@ const CommentItem = ({
   avatarImg,
   answerComment 
 }) => {
+  
   return(
     <>
       <div className='commentItem-wrapper' >
@@ -33,6 +34,7 @@ const CommentItem = ({
               btnForm={ true }
             />
           </div>
+          { answerComment }
         </div>
       </div>
     </>

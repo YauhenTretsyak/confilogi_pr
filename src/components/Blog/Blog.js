@@ -178,9 +178,10 @@ const Blog = () => {
         cudownych zdjęć przed i po! &hearts;
       </Paragraph>
       <div className='instagram-posts-wrapper'>
-        {data.instagramSection.map((instagramPost) => {
+        {data.instagramSection.map((instagramPost, index) => {
           return (
             <InstagramPost
+              key={ index + 'yu545nvbskj664bvs' }
               avatar={instagramPost.avatar}
               name={instagramPost.name}
               city={instagramPost.city}

@@ -6,24 +6,33 @@ const Comments = () => {
 
   const commentsData = blogData.comments;
 
-  const answer = [
-    { name: 'Anna' },
-    {answerTime: '20 godzin temu'},
-    { content: '@Anna Ale efekt! Świetnie wyglądasz, kochana! ' }
-  ]
-
-  const answerComment = answer.Name ? <CommentItem  /> : null;
-
-  // const comment = commentsData.map((item, index) => {
-  //   return(
-
-  //   );
-  // });
+  const comment = commentsData.map((item, index) => {
+    return(
+      <CommentItem 
+        key={ index + 'gf8566ebhf66su' }
+        authorName={ item.authorName } 
+        commentDate={ item.commentDate }
+        commentContent={ item.commentContent }
+        avatarImg={ item.avatarImg }
+        answerComment={ 
+          item.answer 
+          ? <CommentItem  
+              key={ index + 'gf85khj767su' }
+              authorName={ item.answer.authorName } 
+              commentDate={ item.answer.commentDate }
+              commentContent={ item.answer.commentContent }
+              avatarImg={ item.answer.avatarImg }
+            /> 
+          : null 
+        }
+      />
+    );
+  });
 
   return(
     <>
       <div className='comments-wrapper'>
-        <CommentItem />
+        { comment }
       </div>
     </>
   );

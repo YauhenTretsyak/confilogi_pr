@@ -2,7 +2,6 @@
   &-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
   }
 
   &__avatar {
@@ -36,6 +35,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    margin-bottom: 40px;
 
     &-wrapper {
       margin-left: 9px;
