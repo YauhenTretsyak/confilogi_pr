@@ -3,59 +3,60 @@ import BlogHeader from '../blocks/BlogHeader/BlogHeader.js';
 import BlogPostItem from '../blocks/BlogPostItem/BlogPostItem.js';
 import BlogSearchItem from '../blocks/BlogSearchItem/BlogSearchItem.js';
 import Comercial from '../blocks/Comercial/Comercial.js';
-
-import imgTestLink from '../../assets/photo/aside-dzieki-tym.png';
-import imgTestLink2 from '../../assets/photo/aside-szokujace-wyznanie.png';
-import imgTestLink3 from '../../assets/photo/aside-poznaj-historie.png';
-
-import banner1 from '../../assets/photo/banner1.png';
-import banner2 from '../../assets/photo/banner2.png';
-
-// dodać do Data btnStyle, btnTitle !!!!!!!
-
+import blogData from '../../data/Data.js';
 
 const BlogPosts = () => {
 
-  const testContent = 'Dzięki tym prostym ćwiczeniom ujędrnisz pośladki zaledwie w 2 tygodnie!';
-  const testContent2 = 'Szokujące wyznanie modelki plus size – byłam anorektyczką i nie miałam biustu do 25 roku życia.';
-  const testContent3 = 'Poznaj historię czytelniczki, która szybko wróciła do formy';
-  const testContentSearch = 'Bądź z nami na bieżąco! Zapisz się do newslettera. Codziennie nowe fakty z życia gwiazd!'
+  const dataMainBlogHeader = blogData.blogMainHeader;
+  const dataPostItem = blogData.blogPostItem;
+  const dataComercialItem = blogData.comercialItem;
+  const dataBlogSearch = blogData.blogSearchItem;
+
+  const postItem = dataPostItem.map((item, index) => {
+    return(
+      <BlogPostItem 
+        key={ index + 'odnvgfganjg234i' }
+        imgUrl={ item.imgUrl } 
+        content={ item.content } 
+      />
+    );
+  });
+
+  const comercialItem = dataComercialItem.map((item, index) => {
+    return(
+      <>
+        <span className='blog_post__highlight'></span>
+        <Comercial 
+          key={ index + 'apmmndxv65wfvv5' }
+          bgImage={ item.bgImage }
+          btnTilte={ item.btnTilte }
+          btnLink={ item.btnLink }
+          btnStyle = { item.btnStyle }
+        />
+      </>
+    );
+  });
+
+  const blogSearch = dataBlogSearch.map((item, index) => {
+    return(
+      <BlogSearchItem 
+        key={ index + 'kh45bnva823bv' }
+        title={ item.title }
+        placeHolderTitle={ item.placeHolderTitle }
+        btnTitle={ item.btnTitle }
+        content={ item.content }
+      />
+    );
+  });
 
   return (
     <section className='blog_posts'>
-      <BlogHeader 
-        title={'Ostatnie posty'}
-      />
-      <BlogPostItem imgUrl={ imgTestLink } content={ testContent } />
-      <BlogPostItem imgUrl={ imgTestLink2 } content={ testContent2 } />
-      <BlogPostItem imgUrl={ imgTestLink3 } content={ testContent3 } />
-
-      <BlogSearchItem 
-        title={'Wyszukaj'}
-        placeHolderTitle={'Wpisz frazę...'}
-        btnTitle={'Szukaj'}
-      />
-      <BlogSearchItem 
-        title={'Newsletter'} 
-        placeHolderTitle={'Wpisz adres e-mail...'}
-        btnTitle={'Zapisz'}
-        content={ testContentSearch }
-      />
-
+      <BlogHeader title={ dataMainBlogHeader } />
+      { postItem }
+      { blogSearch }
       <div className='blog_post__comercial-wrapper'>
-        <span className='blog_post__highlight'></span>
-        <Comercial 
-          bgImage={ banner1 }
-          btnTilte={ 'Sprawdź' }
-          btnStyle = { 'white' }
-        />
-        <span className='blog_post__highlight'></span>
-        <Comercial 
-          bgImage={ banner2 }
-          btnTilte={ 'Sprawdź' }
-        />
+        { comercialItem }
       </div>
-
     </section>
   )
 };

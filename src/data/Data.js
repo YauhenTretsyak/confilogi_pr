@@ -7,6 +7,19 @@ import mainPhoto3 from '../assets/photo/instagram-moniiis.png';
 import mainPhoto4 from '../assets/photo/instagram-lovely.png';
 import verified from '../assets/instagram/blue-check.svg';
 
+//** blogPostItem images */
+import imgPostItem1 from '../assets/photo/aside-dzieki-tym.png';
+import imgPostItem2 from '../assets/photo/aside-szokujace-wyznanie.png';
+import imgPostItem3 from '../assets/photo/aside-poznaj-historie.png';
+
+//** comercialItem images */
+import comercialBanner1 from '../assets/photo/banner1.png';
+import comercialBanner2 from '../assets/photo/banner2.png';
+
+//** comments images */
+import avatarImg1 from '../assets/photo/testimonial-ania.png';
+import avatarImg2 from '../assets/photo/testimonial-anette.png';
+
 const blogData = {
   navigationLinks: [
     'Aktualności',
@@ -17,11 +30,56 @@ const blogData = {
     'Horoskop',
   ],
   author: 'Karolina Marczyk',
-  blogPostsTitles: {
-    mainTitle: 'Ostatnie posty',
-  },
-  blogPostsForms: {},
-  footerLinks: ['Polityka prywatności', 'Mapa strony', 'Cookies'],
+
+  //** BlogPosts */
+  blogMainHeader: ['Ostatnie posty'],
+
+  blogPostItem : [
+    {
+      imgUrl: imgPostItem1, 
+      content: 'Dzięki tym prostym ćwiczeniom ujędrnisz pośladki zaledwie w 2 tygodnie!'
+    },
+    {
+      imgUrl: imgPostItem2, 
+      content: 'Szokujące wyznanie modelki plus size – byłam anorektyczką i nie miałam biustu do 25 roku życia.'
+    },
+    {
+      imgUrl: imgPostItem3, 
+      content: 'Poznaj historię czytelniczki, która szybko wróciła do formy'
+    },
+  ],
+
+  blogSearchItem : [
+    {
+      title: 'Wyszukaj',
+      placeHolderTitle: 'Wpisz frazę...',
+      btnTitle: 'Szukaj',
+      content: null,
+    },
+    {
+      title: 'Newsletter',
+      placeHolderTitle: 'Wpisz adres e-mail...',
+      btnTitle: 'Zapisz',
+      content:  'Bądź z nami na bieżąco! Zapisz się do newslettera. Codziennie nowe fakty z życia gwiazd!',
+    },
+  ],
+
+  comercialItem : [
+    {
+      bgImage: comercialBanner1,
+      btnTilte: 'Sprawdź',
+      btnLink: '/',
+      btnStyle: 'white',
+    },
+    {
+      bgImage: comercialBanner2,
+      btnTilte: 'Sprawdź',
+      btnLink: '/',
+      btnStyle: '',
+    },
+  ], 
+  //** end BlogPosts */ 
+
   instagramPost1: {
     avatar: avatar1,
     name: 'kyliejenner',
@@ -95,6 +153,29 @@ const blogData = {
       ],
       numberOfComments: '813',
     },
+  ],
+
+  //** Comments */
+  comments : [
+    {
+      authorName: 'Ania',
+      avatarImg: avatarImg1,
+      commentDate: '20 godzin temu',
+      commentContent: 'O ja, ale efekty! Aż trudno uwierzyć, że Kylie osiągnęła to wszystko bez skalpela. :)',
+    },
+    {
+      authorName: 'Ania',
+      avatarImg: avatarImg2,
+      commentDate: '20 godzin temu',
+      commentContent: 'O ja, ale efekty! Aż trudno uwierzyć, że Kylie osiągnęła to wszystko bez skalpela. :)',
+    }
+  ],
+
+  //** Footer */ 
+  footerLinks : [
+    { title: 'Polityka prywatności', link: '/'},
+    { title: 'Mapa strony', link: '/'},
+    { title: 'Cookies', link: '/' }
   ],
 };
 

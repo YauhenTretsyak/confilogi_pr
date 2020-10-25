@@ -8,7 +8,11 @@ const Footer = () => {
 
   const footerLinks = linkData.map((item, index) => {
     return (
-      <LinkItem key={index + 'bvccvdm8795g'} content={item}/>
+      <LinkItem 
+        key={index + 'bvccvdm8795g'} 
+        content={item.title}
+        link={item.link}
+      />
     )
   })
   

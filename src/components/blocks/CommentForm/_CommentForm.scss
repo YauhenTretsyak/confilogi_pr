@@ -55,6 +55,10 @@
     margin-bottom: 40px;
     width: 100%;
 
+    & a:last-child {
+      margin-right: 0;
+    }
+
     @media only screen and (min-width: 768px) {
       justify-content: unset;
     }
@@ -77,32 +81,26 @@
   }
 
   &__btn {
+    display: flex;
+    justify-content: center;
     height: auto;
     width: 100%;
     max-width: 169px;
     padding: 12px 35px;
+    font-size: $font_size-14;
 
     @media only screen and (min-width: 576px) {
       width: fit-content;
       max-width: unset;
       min-width: 228px;
       padding: 20px 50px;
-    }
-    
-    & > a {
-      font-size: $font_size-14;
-      @media only screen and (min-width: 576px) {
-        font-size: $font_size-18;
-      }
+      font-size: $font_size-18;
     }
 
     &_light {
       border: 1px solid $color_grey;
+      color: $color_grey;
       background-color: $color_white;
-
-      & > a {
-        color: $color_grey;
-      } 
     }
 
     &-wrapper {
@@ -122,7 +120,7 @@
         margin: unset;
       }
 
-      & > button:first-child {
+      & > a:first-child {
         margin-bottom: 26px;
 
         @media only screen and (min-width: 576px) {
@@ -149,14 +147,7 @@
     width: unset;
     min-width: 228px;
     padding: 20px 50px;
-  }
-
-  & > a {
-    font-size: $font_size-12;
-
-    @media only screen and (min-width: 576px) {
-      font-size: $font_size-18;
-    }
+    font-size: $font_size-18;
   }
 
   &-wrapper {
@@ -173,7 +164,7 @@
       margin: unset;
     }
 
-    & > button:first-child {
+    & > a:first-child {
       margin-bottom: 0;
     } 
   }

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Button = ({text, styleName, btnForm}) => {
+const Button = ({ text, styleName, btnForm, btnLink }) => {
 
   const ButtonLink = () => {
-    return <button className={`btn ${styleName}`}><a href='/' className='btn_link'>{text}</a></button>;
+    return <a href={ btnLink } className={`btn btn_link ${styleName}`}><span>{text}</span></a>;
   };
 
   const ButtonForm = () => {

@@ -1,4 +1,5 @@
 .btn {
+<<<<<<< HEAD
   background-color: $color_pink-main;
   color: $color_white;
   border: none;
@@ -12,3 +13,18 @@
   color: $color_white;
   text-decoration: none;
 }
+=======
+  height: auto;
+  width: fit-content;
+  border: none;
+  font-size: $font_size-base;
+  background-color: $color_pink-main;
+  color: $color_white;
+}
+
+.btn_link {
+  display: block;
+  color: $color_white;
+  text-decoration: none;
+}
+>>>>>>> f799eb19c4ff829e988d931aa596d82592c0fcd7

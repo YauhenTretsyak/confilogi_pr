@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Button from '../blocks/Button/Button.js';
 import Navigation from '../blocks/Navigation/Navigation.js';
 import CommentForm from '../blocks/CommentForm/CommentForm.js';
+import Comments from '../Comments/Comments.js';
 import Date from '../blocks/Date/Date.js';
 import Author from '../blocks/Author/Author.js';
 import Paragraph from '../blocks/Paragraph/Paragraph.js';
@@ -42,8 +43,12 @@ const Blog = () => {
         <Navigation text={'Przemiany gwiazd'} styleName={'blog__links__item'} /> /{' '}
         <span>"Wow! Niesamowity sekret Kylie..."</span>
       </div>
-      <Button styleName='blog__btn' text='Przemiany gwiazd' />
-      <div className='blog__info'>
+      <Button 
+        styleName='blog_btn' 
+        btnLink='/'
+        text='Przemiany gwiazd' 
+      />
+      <div className='blog_info'>
         <Date />
         <Author />
       </div>
@@ -249,6 +254,7 @@ const Blog = () => {
       </Paragraph> */}
       </div>
       <CommentForm />
+      <Comments />
     </section>
   );
 };

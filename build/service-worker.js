@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/confilogi_pr/precache-manifest.edf9ef3b139dc03c5ea3af97e2d19ec0.js"
+  "/confilogi_pr/precache-manifest.0cee6d75d2537ade027b42a2f834ca5e.js"
 );
 
 self.addEventListener('message', (event) => {
