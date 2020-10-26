@@ -5,7 +5,12 @@ const Comercial = ({ bgImage, btnTilte, btnStyle, btnLink , blogSmall, blogWide 
   const btnColor =
     btnStyle === 'white' ? 'comercial__btn_white' : 'comercial__btn_orange';
 
-  const topLine = blogWide ? null : <span className='blog_post__highlight'></span>;
+  const topLine = blogWide 
+                  ? null 
+                  : blogSmall
+                  ? null
+                  : <span className='blog_post__highlight'></span>
+                   
 
   return (
     <>
