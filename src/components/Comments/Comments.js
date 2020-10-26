@@ -5,7 +5,7 @@ import blogData from '../../data/Data.js';
 const Comments = () => {
 
   const commentsData = blogData.comments;
-
+  
   const comment = commentsData.map((item, index) => {
     return(
       <CommentItem 
