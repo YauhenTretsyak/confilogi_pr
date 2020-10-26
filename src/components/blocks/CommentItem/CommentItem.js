@@ -6,10 +6,13 @@ const CommentItem = ({
   commentDate,
   commentContent,
   avatarImg,
+  images,
   answerComment 
 }) => {
   
-  return(
+  console.log (images);
+
+  return(  
     <>
       <div className='commentItem-wrapper' >
         <div className='commentItem__avatar'>
@@ -27,7 +30,23 @@ const CommentItem = ({
           </div>
           
           <div className='commentItem__content'>
-            <p className='commentItem__text'>{ commentContent }</p>
+            <div className='commentItem__info' >
+              <p className='commentItem__text'>{ commentContent }</p>
+              <div className='commentItem__content_img-wrapper'>
+                { 
+                  images ? images.map((item, index) => {
+                    return(
+                      <img 
+                        key={index + 'uity669856hhf'}
+                        src={ item }
+                        className='commentItem__content_img'
+                      ></img>
+                    );
+                  }) 
+                  : null
+                }
+              </div>
+            </div>
             <Button 
               text={ 'Odpowiedź' } 
               styleName={ 'commentItem__btn' }
