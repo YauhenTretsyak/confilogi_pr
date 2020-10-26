@@ -22,6 +22,10 @@
     padding: 13px 26px;
     text-transform: uppercase;
     font-weight: $font_weight-bold;
+
+    @media only screen and (min-width: 1104px) {
+      font-size: $font_size-16;
+    }
   }
 
   &__info {
@@ -69,13 +73,18 @@
 
 .quotation {
   display: flex;
-  margin-bottom: 2rem;
+  margin-top: 2.5rem;
+
+  @media only screen and (min-width: 1104px) {
+    margin-bottom: 6.5rem;
+    margin-top: 4rem;
+  }
 
   &__img {
     width: 2rem;
     align-self: flex-start;
     margin-right: 1rem;
-  
+
     @media only screen and (min-width: 1104px) {
       width: 4rem;
     }
@@ -88,6 +97,7 @@
 
   & > .paragraph__text {
     margin-bottom: 0;
+    margin-top: 0;
   }
 }
 
@@ -97,16 +107,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2.8rem 0;
-  margin-bottom: 2rem;
+  padding: 3rem 0;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+
+  & .instagram-post:last-child {
+    margin-bottom: 0;
+  }
 
   @media only screen and (min-width: 1104px) {
     padding: 5rem 1rem;
   }
 
-  & > .paragraph_text {
+  & > .paragraph__text {
     text-align: center;
+    margin-top: 0.8rem;
+    margin-bottom: 3rem;
     padding: 0 0.9rem;
+
+    @media only screen and (min-width: 1104px) {
+      margin-top: 0;
+      margin-bottom: 5rem;
+    }
   }
 }
-

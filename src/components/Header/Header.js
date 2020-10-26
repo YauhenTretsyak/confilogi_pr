@@ -15,21 +15,15 @@ const Header = () => {
         <div className='box_wrapper'>
           <div className='header__wrapper'>
             <div className='header__social-media'>
-              <a href='/'><img
-                className='header__social-media_item'
-                src={fb}
-                alt='fb-logo'
-              /></a>
-              <a href='/'><img
-                className='header__social-media_item'
-                src={twitter}
-                alt='twitter-logo'
-              /></a>
-              <a href='/'><img
-                className='header__social-media_item'
-                src={instagram}
-                alt='instagram-logo'
-              /></a>
+              <a className='header__social-media_item' href='/'>
+                <img src={fb} alt='fb-logo' />
+              </a>
+              <a className='header__social-media_item' href='/'>
+                <img src={twitter} alt='twitter-logo' />
+              </a>
+              <a className='header__social-media_item' href='/'>
+                <img src={instagram} alt='instagram-logo' />
+              </a>
             </div>
             <img
               className='header__menu'
@@ -44,30 +38,30 @@ const Header = () => {
           </div>
           <p className='header__text'>Poznaj pikantne fakty z życia gwiazd!</p>
           <span className='header__highlight'></span>
-            <nav
-              className={
-                showMenu
-                  ? 'header__navigation header__navigation-show'
-                  : 'header__navigation'
-              }
-            >
-              {data.navigationLinks.map((link, index) => {
-                return (
-                  <Navigation
-                    key={index}
-                    text={link}
-                    styleName={'header__navigation_item'}
-                  />
-                );
-              })}
-            </nav>
-            <span
-              className={
-                showMenu
-                  ? 'header__highlight header__highlight-show'
-                  : 'header__highlight header__highlight-last'
-              }
-            ></span>
+          <nav
+            className={
+              showMenu
+                ? 'header__navigation header__navigation-show'
+                : 'header__navigation'
+            }
+          >
+            {data.navigationLinks.map((link, index) => {
+              return (
+                <Navigation
+                  key={index}
+                  text={link}
+                  styleName={'header__navigation_item'}
+                />
+              );
+            })}
+          </nav>
+          <span
+            className={
+              showMenu
+                ? 'header__highlight header__highlight-show'
+                : 'header__highlight header__highlight-last'
+            }
+          ></span>
         </div>
       </header>
     </>

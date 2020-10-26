@@ -4,7 +4,11 @@
   background-color: $color_white;
   font-family: 'MariadPro-Regular';
   box-shadow: 3px 3px 5px 0px rgba(199, 199, 199, 1);
-  margin-bottom: 2rem;
+  margin-bottom: 2.2rem;
+
+  @media only screen and (min-width: 1104px) {
+    margin-bottom: 5rem;
+  }
 
   &_header {
     display: flex;

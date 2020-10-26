@@ -4,11 +4,15 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 6rem;
+    margin-bottom: 2.6rem;
   }
 
   &__social-media_item {
-    margin-right: 3rem;
+    margin-right: 3.2rem;
+
+    @media only screen and (min-width: 1104px) {
+      margin-right: 6rem;
+    }
   }
 
   &__text {
@@ -17,6 +21,10 @@
     text-align: center;
     color: $color_grey-dark;
     font-size: $font_size-15;
+
+    @media only screen and (min-width: 1104px) {
+      font-size: $font_size-18;
+    }
   }
 
   &__highlight {
@@ -26,10 +34,19 @@
     background-color: $color_grey-light;
     margin-bottom: 2rem;
     opacity: 0.2;
+
+    @media only screen and (min-width: 1104px) {
+      margin-bottom: 0;
+    }
   }
 
   &__highlight-last {
     display: none;
+
+    @media only screen and (min-width: 1104px) {
+      margin-bottom: 2rem;
+      display: block;
+    }
   }
 
   &__highlight-show {
@@ -38,12 +55,23 @@
 
   &__navigation {
     display: none;
+
+    @media only screen and (min-width: 1104px) {
+      display: flex;
+      height: 6rem;
+      align-items: center;
+      justify-content: space-around;
+    }
   }
 
   &__menu {
     cursor: pointer;
+
+    @media only screen and (min-width: 1104px) {
+      display: none;
+    }
   }
-  
+
   &__navigation-show {
     display: flex;
     flex-direction: column;
@@ -56,38 +84,11 @@
     color: $color_black_additional;
     font-weight: $font_weight-bold;
     margin-bottom: 1rem;
-  }
 
-  @media only screen and (min-width: 1104px) {
-    &__highlight {
-      margin-bottom: 0;
-    }
-
-    &__highlight:last-child {
-      margin-bottom: 2rem;
-      display: block;
-    }
-
-    &__menu {
-      display: none;
-    }
-
-    &__navigation {
-      display: flex;
-      height: 6rem;
-      align-items: center;
-      justify-content: space-around;
-    }
-
-    &__navigation_item {
+    @media only screen and (min-width: 1104px) {
       margin-bottom: 0;
       font-size: $font_size-20;
     }
-
-    &__text {
-      font-size: $font_size-18;
-    }
-  
   }
 }
 
@@ -111,4 +112,3 @@
     transform: translateX(-50%);
   }
 }
-
