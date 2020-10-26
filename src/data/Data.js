@@ -195,12 +195,6 @@ const blogData = {
     },
   ],
 
-  //** Footer */ 
-  footerLinks : [
-    { title: 'Polityka prywatności', link: '/'},
-    { title: 'Mapa strony', link: '/'},
-    { title: 'Cookies', link: '/' }
-  ],
 };
 
 export default blogData;

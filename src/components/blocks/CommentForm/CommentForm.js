@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Button from '../Button/Button.js';
 import blogData from '../../../data/Data.js';
 import avatarDefault from '../../../assets/avatary/avatar.png';
+import moment from 'moment';
+import 'moment/locale/pl';
 
 const CommentForm = ({ updateData }) => {
 
@@ -22,7 +24,7 @@ const CommentForm = ({ updateData }) => {
       updateData({
         authorName: dataInputName,
         avatarImg: avatarDefault,
-        commentDate: '20 godzin temu',
+        commentDate: moment().format('D MMMM YYYY, hh:mm a'),
         commentContent: dataInputContent,
         images: [],
         answer : null

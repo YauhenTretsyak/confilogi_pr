@@ -11,6 +11,8 @@
     width: 100%;
     min-height: 24px;
     margin-bottom: 5px;
+    padding: 0 15px;
+    color: $color_grey-light;
     border: 1px solid $color_grey;
   }
 
@@ -18,7 +20,10 @@
     width: 100%;
     min-height: 94px;
     margin-bottom: 20px;
+    padding: 10px 15px;
+    color: $color_grey-light;
     border: 1px solid $color_grey;
+    outline: none;
   }
 
   &-wrapper {

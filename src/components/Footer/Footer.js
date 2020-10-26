@@ -1,5 +1,5 @@
 import React from 'react';
-import Data from '../../data/Data.js';
+import Data from '../../data/footerData.js';
 import LinkItem from './LinkItem/LinkItem.js';
 
 const Footer = () => {

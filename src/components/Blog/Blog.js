@@ -18,9 +18,6 @@ import banner4 from '../../assets/photo/banner4.png';
 import data from '../../data/Data.js';
 import Promotion from '../blocks/Promotion/Promotion.js';
 
-
-//dodac text1, text2  w instagramPost
-
 const Blog = () => {
   const [isTablet, setTablet] = useState(window.innerWidth > 625);
 
