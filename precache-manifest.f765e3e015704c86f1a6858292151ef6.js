@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3029a3a220c7c991dab9a9445617443f",
+    "revision": "d8e29b19d9986465ae35404e0c3799bb",
     "url": "/confilogi_pr/index.html"
   },
   {
-    "revision": "fca3fd8e8c8e48399dd0",
-    "url": "/confilogi_pr/static/css/main.377e7a79.chunk.css"
+    "revision": "e6666f1f54784a4cd9fd",
+    "url": "/confilogi_pr/static/css/main.8ddbcc6a.chunk.css"
   },
   {
-    "revision": "2f4645ca743a438faee2",
-    "url": "/confilogi_pr/static/js/2.c9e3e938.chunk.js"
+    "revision": "4a64f728098d98ef3326",
+    "url": "/confilogi_pr/static/js/2.f9a691c0.chunk.js"
   },
   {
     "revision": "48bd7bad75130283b8e683aa665baa5c",
-    "url": "/confilogi_pr/static/js/2.c9e3e938.chunk.js.LICENSE.txt"
+    "url": "/confilogi_pr/static/js/2.f9a691c0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fca3fd8e8c8e48399dd0",
-    "url": "/confilogi_pr/static/js/main.fa07ba79.chunk.js"
+    "revision": "e6666f1f54784a4cd9fd",
+    "url": "/confilogi_pr/static/js/main.52ee6263.chunk.js"
   },
   {
     "revision": "c648aba5b51fe355b338",
