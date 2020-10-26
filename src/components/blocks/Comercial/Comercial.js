@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../Button/Button.js';
 
-const Comercial = ({ bgImage, btnTilte, btnStyle, btnLink , blogSmall, blogWide }) => {
+const Comercial = ({ bgImage, btnTitle, btnStyle, btnLink , blogSmall, blogWide }) => {
   const btnColor =
     btnStyle === 'white' ? 'comercial__btn_white' : 'comercial__btn_orange';
 
@@ -21,7 +21,7 @@ const Comercial = ({ bgImage, btnTilte, btnStyle, btnLink , blogSmall, blogWide 
             <img className='comercial__img' alt='banner' src={bgImage}></img>
           </div>
           <Button
-            text={btnTilte}
+            text={btnTitle}
             btnLink={ btnLink }
             styleName={
               blogSmall

@@ -58,7 +58,7 @@ const Blog = () => {
         <span className='paragraph__text-pink-bold'>
           nieinwazyjna naturalna metoda!
         </span>
-        Gdyby celebrytka nie przyznała tego sama, ciężko byłoby uwierzyć,{' '}
+        {' '}Gdyby celebrytka nie przyznała tego sama, ciężko byłoby uwierzyć,{' '}
         <span className='paragraph__text-pink-bold'>
           że swoje nieziemskie krągłości zawdzięcza wyłącznie temu innowacyjnemu
           żelowi.
@@ -126,7 +126,7 @@ const Blog = () => {
           followers={data.instagramPost1.followers}
           mainPhoto={data.instagramPost1.mainPhoto}
           numberOfLikes={data.instagramPost1.numberOfLikes}
-          text={data.instagramPost1.text}
+          text1={data.instagramPost1.text1}
           postHashtags={data.instagramPost1.postHashtags}
           numberOfComments={data.instagramPost1.numberOfComments}
         />
@@ -152,7 +152,7 @@ const Blog = () => {
           followers={data.instagramPost2.followers}
           mainPhoto={data.instagramPost2.mainPhoto}
           numberOfLikes={data.instagramPost2.numberOfLikes}
-          text={data.instagramPost2.text}
+          text1={data.instagramPost2.text1}
           postHashtags={data.instagramPost2.postHashtags}
           numberOfComments={data.instagramPost2.numberOfComments}
         />
@@ -177,7 +177,8 @@ const Blog = () => {
               city={instagramPost.city}
               mainPhoto={instagramPost.mainPhoto}
               numberOfLikes={instagramPost.numberOfLikes}
-              text={instagramPost.text}
+              text1={instagramPost.text1}
+              text2={instagramPost.text2}
               postHashtags={instagramPost.postHashtags}
               numberOfComments={instagramPost.numberOfComments}
             />
@@ -212,13 +213,15 @@ const Blog = () => {
             <Comercial
               blogWide={true}
               bgImage={banner4}
-              btnTilte={'Kliknij i sprawdź'}
+              btnTitle={'Kliknij i sprawdź'}
+              btnLink={'/'}
             />
           ) : (
             <Comercial
               blogSmall={true}
               bgImage={banner3}
-              btnTilte={'Sprawdź!'}
+              btnTitle={'Sprawdź!'}
+              btnLink={'/'}
             />
           )}
         </>

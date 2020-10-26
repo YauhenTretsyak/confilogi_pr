@@ -27,7 +27,7 @@ const BlogPosts = () => {
       <Comercial 
         key={ index + 'apmmndxv65wfvv5' }
         bgImage={ item.bgImage }
-        btnTilte={ item.btnTilte }
+        btnTitle={ item.btnTilte }
         btnLink={ item.btnLink }
         btnStyle = { item.btnStyle }
       />

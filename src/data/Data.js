@@ -85,6 +85,8 @@ const blogData = {
   ], 
   //** end BlogPosts */ 
 
+  //**InstagramPosts*/
+
   instagramPost1: {
     avatar: avatar1,
     name: 'kyliejenner',
@@ -92,7 +94,7 @@ const blogData = {
     followers:'197,9 mln obserwujących',
     mainPhoto: mainPhoto1,
     numberOfLikes: '10 001 587',
-    text:
+    text1:
       "The secret of my perfect body is not a secret at all! I deny all rumors that I've ever had any plastic surgery. Everything that I achieved, I achieved by using only natural methods. My breasts and buttocks look like this because I've been using this gel for one month. Sensual Shape is completely natural product that naturally enlarges all the curves by increasing the fat cells!",
     postHashtags: [
       '#body',
@@ -111,7 +113,7 @@ const blogData = {
     followers:'197,9 mln obserwujących',
     mainPhoto: mainPhoto2,
     numberOfLikes: '8 521 507',
-    text:
+    text1:
     "This is the secret of my look. Try it yourself, it's worth it!",
     postHashtags: [
       '#curves',
@@ -130,7 +132,7 @@ const blogData = {
       city: 'Cracow',
       mainPhoto: mainPhoto3,
       numberOfLikes: '851',
-      text:
+      text1:
         'Minęły 2 miesiące odkąd przestałam karmić piersią! Przyznam, że po porodzie mój biust nie był w najlepszym stanie. A teraz – jest idealnie jędrny, wygląda lepiej, niż wcześniej. Same zobaczcie! 😊',
       postHashtags: [
         '#smile',
@@ -147,8 +149,9 @@ const blogData = {
       city: 'Warszawa',
       mainPhoto: mainPhoto4,
       numberOfLikes: '1016',
-      text:
-        'Chyba w końcu czuję się ze sobą świetnie! To tylko miesiąc, a ja wiem, że zniknęły wszystkie moje kompleksy. :D A wszystko dzięki Sensual Shape. Życie jest cudowne! PS. Kochane, uważajcie na podróbki – zamówiłam ten żel z oryginalnej strony producenta! Tylko tam dostaniecie pewny produkt, który naprawdę działa.',
+      text1:
+        'Chyba w końcu czuję się ze sobą świetnie! To tylko miesiąc, a ja wiem, że zniknęły wszystkie moje kompleksy. :D A wszystko dzięki Sensual Shape. Życie jest cudowne!',
+      text2: 'PS. Kochane, uważajcie na podróbki – zamówiłam ten żel z oryginalnej strony producenta! Tylko tam dostaniecie pewny produkt, który naprawdę działa.',
       postHashtags: [
         '#smile',
         '#polishgirl',
