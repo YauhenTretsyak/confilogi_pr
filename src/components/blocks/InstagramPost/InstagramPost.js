@@ -17,7 +17,6 @@ const InstagramPost = ({
   postHashtags,
   numberOfComments,
 }) => {
-  console.log(postHashtags);
   return (
     <div className='instagram-post'>
       <header className='instagram-post_header'>

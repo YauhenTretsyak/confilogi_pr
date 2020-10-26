@@ -47,7 +47,7 @@ const Header = () => {
             <nav
               className={
                 showMenu
-                  ? 'header__navigation header_navigation-show'
+                  ? 'header__navigation header__navigation-show'
                   : 'header__navigation'
               }
             >

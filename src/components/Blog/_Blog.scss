@@ -67,32 +67,6 @@
   }
 }
 
-.paragraph {
-  &__pink-text {
-    color: $color_pink-main;
-  
-    &-bold {
-      color: $color_pink-main;
-      font-weight: $font_weight-bold;
-    }
-  }
-
-  &__text-bold {
-    font-weight: $font_weight-bold;
-  }
-
-  &__text-italic {
-    font-style: italic;
-  }
-
-  &__pink-text-italic {
-    text-transform: uppercase;
-    font-style: italic;
-    color: $color_pink-main;
-    font-weight: $font_weight-bold;
-  }
-}
-
 .quotation {
   display: flex;
   margin-bottom: 2rem;
@@ -112,7 +86,7 @@
     }
   }
 
-  & > .paragraph_text {
+  & > .paragraph__text {
     margin-bottom: 0;
   }
 }

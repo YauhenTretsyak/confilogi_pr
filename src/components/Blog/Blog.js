@@ -17,11 +17,8 @@ import banner3 from '../../assets/photo/banner3.png';
 import banner4 from '../../assets/photo/banner4.png';
 
 import data from '../../data/Data.js';
+import Promotion from '../blocks/Promotion/Promotion.js';
 
-//zmienić w instagram post jednen paragraf!
-//ogarnąć React Helmet!!
-//dodać nowy component na promocje
-//zmienic wielkosc fonta w btn Przemiany gwiazd
 //dodac text1, text2  w instagramPost
 
 const Blog = () => {
@@ -40,21 +37,17 @@ const Blog = () => {
     <section className='blog'>
       <div className='blog__links'>
         <Navigation text={'Aktualności'} styleName={'blog__links__item'} /> /{' '}
-        <Navigation text={'Przemiany gwiazd'} styleName={'blog__links__item'} /> /{' '}
-        <span>"Wow! Niesamowity sekret Kylie..."</span>
+        <Navigation text={'Przemiany gwiazd'} styleName={'blog__links__item'} />{' '}
+        / <span>"Wow! Niesamowity sekret Kylie..."</span>
       </div>
-      <Button 
-        styleName='blog_btn' 
-        btnLink='/'
-        text='Przemiany gwiazd' 
-      />
-      <div className='blog_info'>
+      <Button styleName='blog_btn' btnLink='/' text='Przemiany gwiazd' />
+      <div className='blog__info'>
         <Date />
         <Author />
       </div>
       <h1 className='blog__title'>
         Wow! Niesamowity sekret Kylie Jenner odkryty – dzięki{' '}
-        <span className='paragraph__pink-text'>TEJ</span> prostej metodzie z
+        <span className='paragraph__text-pink'>TEJ</span> prostej metodzie z
         łatwością powiększysz i ujędrnisz biust oraz pośladki tak jak ona!
       </h1>
       <img className='blog__img' src={mainPhoto} alt='kylie-jenner'></img>
@@ -65,11 +58,11 @@ const Blog = () => {
         Okazuje się, że jej obfity, kształtny biust i pośladki nie są wynikiem
         genetyki, ani – co dziwniejsze – chirurgii plastycznej. Za te piękne,
         kobiece kształty odpowiada{' '}
-        <span className='paragraph__pink-text-bold'>
+        <span className='paragraph__text-pink-bold'>
           nieinwazyjna naturalna metoda!
         </span>
         Gdyby celebrytka nie przyznała tego sama, ciężko byłoby uwierzyć,{' '}
-        <span className='paragraph__pink-text-bold'>
+        <span className='paragraph__text-pink-bold'>
           że swoje nieziemskie krągłości zawdzięcza wyłącznie temu innowacyjnemu
           żelowi.
         </span>
@@ -97,7 +90,7 @@ const Blog = () => {
         Kylie niedawno urodziła swoje pierwsze dziecko. Kiedy w formie lepszej
         niż sprzed ciąży pojawiła się na okładkach najbardziej znanych
         tabloidów, fani byli w szoku.{' '}
-        <span className='paragraph__pink-text-bold'>
+        <span className='paragraph__text-pink-bold'>
           Figura gwiazdy wyglądała idealnie – płaski brzuch, krągłe, jędrne
           pośladki i ten doskonały, WIELKI BIUST!
         </span>
@@ -170,7 +163,7 @@ const Blog = () => {
       <Paragraph>
         Ta formuła to prawdziwy hit na rynku! Zawiera fitoestrogeny, które w
         zupełnie naturalny sposób{' '}
-        <span className='paragraph__pink-text-bold'>
+        <span className='paragraph__text-pink-bold'>
           powiększają biust o 3 rozmiary w zaledwie miesiąc!
         </span>{' '}
         Cały świat dosłownie oszalał na jego punkcie. Jak się okazało, produkt
@@ -181,7 +174,7 @@ const Blog = () => {
         {data.instagramSection.map((instagramPost, index) => {
           return (
             <InstagramPost
-              key={ index + 'yu545nvbskj664bvs' }
+              key={index + 'yu545nvbskj664bvs'}
               avatar={instagramPost.avatar}
               name={instagramPost.name}
               city={instagramPost.city}
@@ -234,25 +227,29 @@ const Blog = () => {
         </>
       }
       <div className='promotion-wrapper'>
-        {/* <Paragraph>
-        <span className='paragraph_pink-text-italic'>
-          Kliknij w baner powyżej i zamów żel sensual shape ze zniżką 70%!
-        </span>
-      </Paragraph> */}
+        <Promotion>
+          <span className='promotion__text-italic'>
+            Kliknij w baner powyżej i zamów żel sensual shape ze zniżką 70%!
+          </span>
+        </Promotion>
         <Paragraph>
           Ilość produktów objętych promocją jest ograniczona. Zamów Sensual
           Shape i uzyskaj idealne ciało zaledwie w jeden miesiąc!
         </Paragraph>
-        {/* <Paragraph>
-        Tylko na tej stronie możesz zamówić oryginalny certyfikowany produkt ze
-        specjalną zniżką!
-      </Paragraph>
-      <Paragraph>
-        UWAGA! Naszej redakcji udało się dotrzeć do producenta oryginalnego żelu
-        i otrzymać specjalną zniżkę – 70% dla czytelników! Jednak musicie się
-        pospieszyć – ilość produktów objętych promocją jest ograniczona. Mamy
-        tylko 200 sztuk!
-      </Paragraph> */}
+        <Promotion>
+          <span className='promotion__text-underline'>
+            Tylko na tej stronie możesz zamówić oryginalny certyfikowany produkt
+            ze specjalną zniżką!
+          </span>
+        </Promotion>
+        <Paragraph>
+          <span className='paragraph__text-bold'>UWAGA!</span> Naszej redakcji
+          udało się dotrzeć do producenta oryginalnego żelu i otrzymać specjalną
+          zniżkę <span className='paragraph__text-bold'>– 70%</span> dla
+          czytelników! Jednak musicie się pospieszyć – ilość produktów objętych
+          promocją jest ograniczona.
+          Mamy tylko <span className='paragraph__text-bold'>200 sztuk!</span>
+        </Paragraph>
       </div>
       <CommentForm />
       <Comments />

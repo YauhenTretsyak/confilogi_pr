@@ -1,8 +1,25 @@
-.paragraph_text {
-    line-height: 1.5;
-    margin-bottom: 2rem;
+.paragraph__text {
+  line-height: 1.5;
+  margin-top: 2rem;
 
-    @media only screen and (min-width: 1104px) {
-        font-size: $font_size-18;
-      }
+  @media only screen and (min-width: 1104px) {
+    font-size: $font_size-18;
+  }
+
+  &-pink {
+    color: $color_pink-main;
+
+    &-bold {
+      color: $color_pink-main;
+      font-weight: $font_weight-bold;
+    }
+  }
+
+  &-bold {
+    font-weight: $font_weight-bold;
+  }
+
+  &-italic {
+    font-style: italic;
+  }
 }
