@@ -9,8 +9,6 @@ const CommentItem = ({
   images,
   answerComment 
 }) => {
-  
-  console.log (images);
 
   return(  
     <>
