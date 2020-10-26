@@ -28,12 +28,12 @@
   
     &__content {
       width: 221px;
-      margin-right: 10px;
       font-family: 'Roboto-Bold';
       font-size: $font_size-16;
 
       &-wrapper {
         position: relative;
+        margin-left: 10px;
         padding-bottom: 21px;
       }
     }

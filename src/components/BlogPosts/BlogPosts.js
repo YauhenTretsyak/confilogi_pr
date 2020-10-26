@@ -3,7 +3,7 @@ import BlogHeader from '../blocks/BlogHeader/BlogHeader.js';
 import BlogPostItem from '../blocks/BlogPostItem/BlogPostItem.js';
 import BlogSearchItem from '../blocks/BlogSearchItem/BlogSearchItem.js';
 import Comercial from '../blocks/Comercial/Comercial.js';
-import blogData from '../../data/Data.js';
+import blogData from '../../data/blogPostsData.js';
 
 const BlogPosts = () => {
 
