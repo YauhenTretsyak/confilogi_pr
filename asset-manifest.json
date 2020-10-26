@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/confilogi_pr/static/css/main.a4152cd8.chunk.css",
-    "main.js": "/confilogi_pr/static/js/main.a7ca9fa0.chunk.js",
-    "main.js.map": "/confilogi_pr/static/js/main.a7ca9fa0.chunk.js.map",
+    "main.css": "/confilogi_pr/static/css/main.bee823de.chunk.css",
+    "main.js": "/confilogi_pr/static/js/main.756074ff.chunk.js",
+    "main.js.map": "/confilogi_pr/static/js/main.756074ff.chunk.js.map",
     "runtime-main.js": "/confilogi_pr/static/js/runtime-main.1629f126.js",
     "runtime-main.js.map": "/confilogi_pr/static/js/runtime-main.1629f126.js.map",
-    "static/js/2.fe075bca.chunk.js": "/confilogi_pr/static/js/2.fe075bca.chunk.js",
-    "static/js/2.fe075bca.chunk.js.map": "/confilogi_pr/static/js/2.fe075bca.chunk.js.map",
+    "static/js/2.4c2f6d0b.chunk.js": "/confilogi_pr/static/js/2.4c2f6d0b.chunk.js",
+    "static/js/2.4c2f6d0b.chunk.js.map": "/confilogi_pr/static/js/2.4c2f6d0b.chunk.js.map",
     "index.html": "/confilogi_pr/index.html",
-    "precache-manifest.85c1b5ac0ec377266a2b3fe6fb940b13.js": "/confilogi_pr/precache-manifest.85c1b5ac0ec377266a2b3fe6fb940b13.js",
+    "precache-manifest.f923864c36de2e1ce743627f8ca309c0.js": "/confilogi_pr/precache-manifest.f923864c36de2e1ce743627f8ca309c0.js",
     "service-worker.js": "/confilogi_pr/service-worker.js",
-    "static/css/main.a4152cd8.chunk.css.map": "/confilogi_pr/static/css/main.a4152cd8.chunk.css.map",
-    "static/js/2.fe075bca.chunk.js.LICENSE.txt": "/confilogi_pr/static/js/2.fe075bca.chunk.js.LICENSE.txt",
+    "static/css/main.bee823de.chunk.css.map": "/confilogi_pr/static/css/main.bee823de.chunk.css.map",
+    "static/js/2.4c2f6d0b.chunk.js.LICENSE.txt": "/confilogi_pr/static/js/2.4c2f6d0b.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/confilogi_pr/static/media/roboto-regular-webfont.99935f2c.woff",
     "static/media/aside-dzieki-tym.png": "/confilogi_pr/static/media/aside-dzieki-tym.32a178fd.png",
     "static/media/aside-poznaj-historie.png": "/confilogi_pr/static/media/aside-poznaj-historie.4a5b609c.png",
@@ -41,8 +41,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1629f126.js",
-    "static/js/2.fe075bca.chunk.js",
-    "static/css/main.a4152cd8.chunk.css",
-    "static/js/main.a7ca9fa0.chunk.js"
+    "static/js/2.4c2f6d0b.chunk.js",
+    "static/css/main.bee823de.chunk.css",
+    "static/js/main.756074ff.chunk.js"
   ]
 }
