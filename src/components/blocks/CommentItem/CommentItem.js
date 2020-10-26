@@ -38,6 +38,7 @@ const CommentItem = ({
                         key={index + 'uity669856hhf'}
                         src={ item }
                         className='commentItem__content_img'
+                        alt='commentImage'
                       ></img>
                     );
                   }) 

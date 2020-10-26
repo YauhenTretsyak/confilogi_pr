@@ -5,6 +5,10 @@
   font-size: $font_size-base;
   background-color: $color_pink-main;
   color: $color_white;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .btn_link {

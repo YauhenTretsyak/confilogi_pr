@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import Button from '../blocks/Button/Button.js';
 import Navigation from '../blocks/Navigation/Navigation.js';
-import CommentForm from '../blocks/CommentForm/CommentForm.js';
-import Comments from '../Comments/Comments.js';
+import CommentsBlock from './CommentsBlock/CommentsBlock.js';
 import Date from '../blocks/Date/Date.js';
 import Author from '../blocks/Author/Author.js';
 import Paragraph from '../blocks/Paragraph/Paragraph.js';
@@ -18,6 +17,7 @@ import banner4 from '../../assets/photo/banner4.png';
 
 import data from '../../data/Data.js';
 import Promotion from '../blocks/Promotion/Promotion.js';
+
 
 //dodac text1, text2  w instagramPost
 
@@ -251,8 +251,7 @@ const Blog = () => {
           Mamy tylko <span className='paragraph__text-bold'>200 sztuk!</span>
         </Paragraph>
       </div>
-      <CommentForm />
-      <Comments />
+      <CommentsBlock />
     </section>
   );
 };

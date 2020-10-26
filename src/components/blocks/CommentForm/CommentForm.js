@@ -10,9 +10,9 @@ const CommentForm = () => {
     <>
       <div className='comment_form-wrapper'>
         <h2 className='comment_form__header' >Komentarze</h2>
-       <p className='comment_form__article'>
-         Czytaj komentarze do artykułu 
-         <span>{ dataCommentForm.commentArticle }</span>
+        <p className='comment_form__article'>
+          Czytaj komentarze do artykułu 
+          <span>{ dataCommentForm.commentArticle }</span>
         </p>
         <p className='comment_form__text_registration'>
           Zarejestruj się lub zaloguj aby skomentować.
@@ -23,10 +23,12 @@ const CommentForm = () => {
             <Button 
               text={'Zarejestruj się'} 
               styleName={'comment_form__btn comment_form__btn_light'}
+              btnSpan={ true }
             />
             <Button 
               text={'Zaloguj się'} 
               styleName={'comment_form__btn'}
+              btnSpan={ true }
             />
           </div>
 
@@ -61,12 +63,12 @@ const CommentForm = () => {
               <Button 
                 text={'Dodaj zdjęcie'} 
                 styleName={'comment_form__btn comment_form__btn_light add_btn'}
-                btnLink={ dataCommentForm.btnUploadImgLink }
+                btnSpan={ true }
               />
               <Button 
                 text={'Dodaj komentarz'} 
                 styleName={'comment_form__btn add_btn'}
-                btnLink={ dataCommentForm.btnUploadCommentLink }
+                btnSpan={ true }
               />
             </div>
         </div>
