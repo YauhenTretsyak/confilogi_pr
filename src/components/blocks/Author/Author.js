@@ -1,6 +1,6 @@
 import React from 'react';
 import author from '../../../assets/svg/icon-author.svg';
-import data from '../../../data/Data.js'
+import data from '../../../data/authorData';
 
 const Author = () => {
   return (

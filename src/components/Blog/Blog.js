@@ -8,6 +8,7 @@ import Author from '../blocks/Author/Author.js';
 import Paragraph from '../blocks/Paragraph/Paragraph.js';
 import InstagramPost from '../blocks/InstagramPost/InstagramPost.js';
 import Comercial from '../blocks/Comercial/Comercial.js';
+import Promotion from '../blocks/Promotion/Promotion.js';
 
 import mainPhoto from '../../assets/photo/main-photo.png';
 import quotation from '../../assets/svg/quatation-mark.svg';
@@ -15,8 +16,7 @@ import quotation from '../../assets/svg/quatation-mark.svg';
 import banner3 from '../../assets/photo/banner3.png';
 import banner4 from '../../assets/photo/banner4.png';
 
-import data from '../../data/Data.js';
-import Promotion from '../blocks/Promotion/Promotion.js';
+import data from '../../data/instagramPostsData';
 
 const Blog = () => {
   const [isTablet, setTablet] = useState(window.innerWidth > 625);
@@ -37,7 +37,7 @@ const Blog = () => {
         <Navigation text={'Przemiany gwiazd'} styleName={'blog__links__item'} />{' '}
         / <span>"Wow! Niesamowity sekret Kylie..."</span>
       </div>
-      <Button styleName='blog_btn' btnLink='/' text='Przemiany gwiazd' />
+      <Button styleName='blog__btn' btnLink='/' text='Przemiany gwiazd' />
       <div className='blog__info'>
         <Date />
         <Author />

@@ -3,7 +3,7 @@ import fb from '../../assets/svg/icon-facebook.svg';
 import twitter from '../../assets/svg/icon-twitter.svg';
 import instagram from '../../assets/svg/icon-instagram.svg';
 import threeDots from '../../assets/svg/three-dots.svg';
-import data from '../../data/Data.js';
+import data from '../../data/headerData.js';
 import Navigation from '../blocks/Navigation/Navigation';
 
 const Header = () => {

@@ -33,8 +33,8 @@ const InstagramPost = ({
             <a href='/' className='instagram-post__header__link'>
               <p className='instagram-post__header__name'>{name}</p>
             </a>
-            <p className='instagram-post__header__followers'>{followers ? followers : ''}</p>
-            <p className='instagram-post__header__city'>{city ? city : ''}</p>
+            {followers ? <p className='instagram-post__header__followers'>{followers}</p> : null}
+            {city ? <p className='instagram-post__header__city'>{city}</p> : null}
           </div>
           {verified ? <img
               className='instagram-post__header__verified'
