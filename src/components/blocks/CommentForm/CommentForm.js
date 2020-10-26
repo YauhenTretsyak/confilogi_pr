@@ -1,10 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '../Button/Button.js';
 import blogData from '../../../data/Data.js';
+import avatarDefault from '../../../assets/avatary/avatar.png';
 
-const CommentForm = () => {
+const CommentForm = ({ updateData }) => {
 
   const dataCommentForm = blogData.commentForm;
+  const [dataInputName, setInputNameItem] = useState('');
+  const [dataInputContent, setDataInputContent] = useState('');
+
+  const getName = (e) => {
+    setInputNameItem(e.target.value)
+  };
+
+  const getContent = (e) => {
+    setDataInputContent(e.target.value)
+  };
+
+  const addComment = () => {
+    if (dataInputName.length !== 0 && dataInputContent.length !== 0) {
+      updateData({
+        authorName: dataInputName,
+        avatarImg: avatarDefault,
+        commentDate: '20 godzin temu',
+        commentContent: dataInputContent,
+        images: [],
+        answer : null
+      })
+      
+      setInputNameItem('')
+      setDataInputContent('')
+    }
+  }
 
   return(
     <>
@@ -52,27 +79,46 @@ const CommentForm = () => {
             </svg>
           </a>
         </div>
-        <form className='comment_form' action="#" method="POST">
+        <div className='comment_form'>
           <span>Nick</span>
-          <input className="comment_form__user_name" name="user_name" required="" type="text" />
+
+          <input 
+            onInput={ getName }
+            value = { dataInputName }
+            className="comment_form__user_name" 
+            name="user_name" 
+            type="text" 
+          />
+
           <span>Treść</span>
-          <textarea className="comment_form__user_msg" name="user_message" required="" type="text"></textarea>
+
+          <textarea 
+            onInput={ getContent }
+            value={ dataInputContent }
+            className="comment_form__user_msg" 
+            name="user_message" 
+            type="text"
+          ></textarea>
 
           <div className='comment_form__bottom-wrapper'>
             <div className='comment_form__btn-wrapper add_btn-wrapper'>
-              <Button 
-                text={'Dodaj zdjęcie'} 
-                styleName={'comment_form__btn comment_form__btn_light add_btn'}
-                btnSpan={ true }
-              />
-              <Button 
-                text={'Dodaj komentarz'} 
-                styleName={'comment_form__btn add_btn'}
-                btnSpan={ true }
-              />
+              <div>
+                <Button 
+                  text={'Dodaj zdjęcie'} 
+                  styleName={'comment_form__btn comment_form__btn_light add_btn'}
+                  btnSpan={ true }
+                />
+              </div>
+              <div onClick={ addComment }>
+                <Button 
+                  text={'Dodaj komentarz'} 
+                  styleName={'comment_form__btn add_btn'}
+                  btnSpan={ true }
+                />
+              </div>
             </div>
+          </div>
         </div>
-        </form>
       </div>
     </>
   )

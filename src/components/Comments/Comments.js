@@ -1,10 +1,7 @@
 import React from 'react';
 import CommentItem from '../blocks/CommentItem/CommentItem.js';
-import blogData from '../../data/Data.js';
 
-const Comments = () => {
-
-  const commentsData = blogData.comments;
+const Comments = ({ commentsData }) => {
   
   const comment = commentsData.map((item, index) => {
     return(

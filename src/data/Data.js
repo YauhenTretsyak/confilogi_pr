@@ -1,3 +1,4 @@
+//** InstagramPosts */
 import avatar1 from '../assets/instagram/avatar-kylie.png';
 import avatar2 from '../assets/instagram/avatar-moniiis.png';
 import avatar3 from '../assets/instagram/avatar-lovelykarola26.png';
