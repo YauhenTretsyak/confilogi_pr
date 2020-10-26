@@ -14,6 +14,7 @@ const Comments = () => {
         commentDate={ item.commentDate }
         commentContent={ item.commentContent }
         avatarImg={ item.avatarImg }
+        images={item.images}
         answerComment={ 
           item.answer 
           ? <CommentItem  
@@ -22,6 +23,7 @@ const Comments = () => {
               commentDate={ item.answer.commentDate }
               commentContent={ item.answer.commentContent }
               avatarImg={ item.answer.avatarImg }
+              images={item.answer.images}
             /> 
           : null 
         }

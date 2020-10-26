@@ -16,10 +16,13 @@ import imgPostItem3 from '../assets/photo/aside-poznaj-historie.png';
 import comercialBanner1 from '../assets/photo/banner1.png';
 import comercialBanner2 from '../assets/photo/banner2.png';
 
-//** comments images */
+//** comments avatars & images */
 import avatarImg1 from '../assets/photo/testimonial-ania.png';
 import avatarImg2 from '../assets/photo/testimonial-anette.png';
 import avatarImg3 from '../assets/photo/testimonial-tekla89.png';
+
+import commentImg1 from '../assets/photo/instagram-kylie-2.png';
+
 
 const blogData = {
   navigationLinks: [
@@ -169,6 +172,7 @@ const blogData = {
       avatarImg: avatarImg1,
       commentDate: '20 godzin temu',
       commentContent: 'O ja, ale efekty! Aż trudno uwierzyć, że Kylie osiągnęła to wszystko bez skalpela. :)',
+      images: [],
       answer : null
     },
     {
@@ -176,6 +180,10 @@ const blogData = {
       avatarImg: avatarImg2,
       commentDate: '20 godzin temu',
       commentContent: 'Minął miesiąc, odkąd skończyłam kurację tym żelem. Aż nie mogę w to uwierzyć, musiałam zmienić stanik z 75B na 75D! Zobaczcie, tu są moje zdjęcie sprzed i po kuracji.',
+      images: [
+        commentImg1,
+        commentImg1
+      ],
       answer : 
         {
           authorName: 'Tekla89',

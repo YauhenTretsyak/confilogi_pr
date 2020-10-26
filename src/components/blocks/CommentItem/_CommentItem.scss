@@ -37,10 +37,27 @@
     justify-content: flex-end;
     margin-bottom: 40px;
 
+    &_img {
+      display: block;
+      height: 207px;
+      width: 207px;
+      margin: 0 10px 20px 10px;
+
+      &-wrapper{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+    }
+
     &-wrapper {
       margin-left: 9px;
       width: 90%;
     }
+  }
+
+  &__info {
+    width: 100%;
   }
 
   &__text {
