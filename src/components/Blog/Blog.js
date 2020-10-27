@@ -245,7 +245,7 @@ const Blog = () => {
         <Paragraph>
           <span className='paragraph__text-bold'>UWAGA!</span> Naszej redakcji
           udało się dotrzeć do producenta oryginalnego żelu i otrzymać specjalną
-          zniżkę <p className='paragraph__text-bold'>– 70%</p> dla
+          zniżkę <span className='paragraph__text-bold'>– 70%</span> dla
           czytelników! Jednak musicie się pospieszyć – ilość produktów objętych
           promocją jest ograniczona.
           Mamy tylko <span className='paragraph__text-bold'>200 sztuk!</span>
