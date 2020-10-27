@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CommentForm from '../../blocks/CommentForm/CommentForm';
 import Comments from '../../Comments/Comments';
-import blogData from '../../../data/Data.js';
+import blogData from '../../../data/commentsData.js';
 
 const CommentsBlock = () => {
 

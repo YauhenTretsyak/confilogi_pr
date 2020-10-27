@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Button from '../Button/Button.js';
-import blogData from '../../../data/Data.js';
+import blogData from '../../../data/commentsData.js';
 import avatarDefault from '../../../assets/avatary/avatar.png';
 import moment from 'moment';
 import 'moment/locale/pl';
