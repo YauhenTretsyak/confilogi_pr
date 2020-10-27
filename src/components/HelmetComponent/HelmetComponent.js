@@ -8,14 +8,12 @@ const HelmetComponent = ({
   faviconUrl
 }) => {
   return(
-    <>
       <Helmet>
         <title>{ title }</title>
         <meta charSet="utf-8" />
         <meta name={ name } content={ content } />
         <link rel='icon' type='image/png' href={ faviconUrl } sizes='16x16' />
       </Helmet>
-    </>
   )
 };
  
