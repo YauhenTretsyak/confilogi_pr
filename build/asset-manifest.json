@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/confilogi_pr/static/css/main.1c28b988.chunk.css",
+    "main.css": "/confilogi_pr/static/css/main.2821781d.chunk.css",
     "main.js": "/confilogi_pr/static/js/main.c2cbf6c0.chunk.js",
     "main.js.map": "/confilogi_pr/static/js/main.c2cbf6c0.chunk.js.map",
     "runtime-main.js": "/confilogi_pr/static/js/runtime-main.1629f126.js",
@@ -8,9 +8,9 @@
     "static/js/2.f9a691c0.chunk.js": "/confilogi_pr/static/js/2.f9a691c0.chunk.js",
     "static/js/2.f9a691c0.chunk.js.map": "/confilogi_pr/static/js/2.f9a691c0.chunk.js.map",
     "index.html": "/confilogi_pr/index.html",
-    "precache-manifest.46385c8fe8515a542d624e671e92e296.js": "/confilogi_pr/precache-manifest.46385c8fe8515a542d624e671e92e296.js",
+    "precache-manifest.3572faa8668462aba92009acf0ec1b19.js": "/confilogi_pr/precache-manifest.3572faa8668462aba92009acf0ec1b19.js",
     "service-worker.js": "/confilogi_pr/service-worker.js",
-    "static/css/main.1c28b988.chunk.css.map": "/confilogi_pr/static/css/main.1c28b988.chunk.css.map",
+    "static/css/main.2821781d.chunk.css.map": "/confilogi_pr/static/css/main.2821781d.chunk.css.map",
     "static/js/2.f9a691c0.chunk.js.LICENSE.txt": "/confilogi_pr/static/js/2.f9a691c0.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/confilogi_pr/static/media/roboto-regular-webfont.99935f2c.woff",
     "static/media/aside-dzieki-tym.png": "/confilogi_pr/static/media/aside-dzieki-tym.32a178fd.png",
@@ -43,7 +43,7 @@
   "entrypoints": [
     "static/js/runtime-main.1629f126.js",
     "static/js/2.f9a691c0.chunk.js",
-    "static/css/main.1c28b988.chunk.css",
+    "static/css/main.2821781d.chunk.css",
     "static/js/main.c2cbf6c0.chunk.js"
   ]
 }

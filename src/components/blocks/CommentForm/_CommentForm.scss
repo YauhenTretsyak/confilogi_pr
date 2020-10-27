@@ -78,6 +78,14 @@
         width: 85px;
         margin: 0;
       }
+
+      @media only screen and (min-width: 1104px) {
+        width: 76px;
+      }
+
+      @media only screen and (min-width: 1301px) {
+        width: 85px;
+      }
     }
   }
 
