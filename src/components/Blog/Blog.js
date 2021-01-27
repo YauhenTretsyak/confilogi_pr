@@ -158,7 +158,7 @@ const Blog = () => {
         />
       </div>
       <Paragraph>
-        Ta formuła to prawdziwy hit na rynku! Zawiera fitoestrogeny, które w
+        Ta formuła to prawdziwy hit na rynku! Zawiera bioskładniki, które w
         zupełnie naturalny sposób{' '}
         <span className='paragraph__text-pink-bold'>
           powiększają biust o 3 rozmiary w zaledwie miesiąc!
